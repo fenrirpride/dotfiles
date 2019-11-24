@@ -1,0 +1,31 @@
+{
+  "remoteParents": {
+    "github": {
+      "fenrirpride": {
+        "dotfiles": {
+          "hostingServiceType": "github",
+          "owner": "fenrirpride",
+          "name": "dotfiles"
+        }
+      }
+    }
+  },
+  "remoteHeadCollectionByRemoteName": {
+    "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "0753e3a1391947681b51ca0659abbd8cd3b578ab",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "0753e3a1391947681b51ca0659abbd8cd3b578ab",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    }
+  }
+}

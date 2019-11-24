@@ -1,0 +1,23 @@
+{
+  "tabInfo": {
+    "tabs": [
+      {
+        "id": "eb2fe4d0-c777-4685-91b2-03b57cd7be28",
+        "type": "REPO",
+        "repoName": "python",
+        "repoPath": "/home/yukio/MyCode/python/"
+      },
+      {
+        "id": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d",
+        "type": "REPO",
+        "repoName": "dotfiles",
+        "repoPath": "/home/yukio/dotfiles/"
+      }
+    ],
+    "selectedTabId": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d"
+  },
+  "profileIcon": "gravatar",
+  "profileName": "Default Profile",
+  "userEmail": "fenrirpride@gmail.com",
+  "userName": "yukio"
+}

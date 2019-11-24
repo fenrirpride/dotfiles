@@ -1,0 +1,50 @@
+{
+  "lastUpgradeScriptRun": "v6.1.0",
+  "lastVersion": "6.3.1",
+  "lastReleaseNotesDisplayed": "6.3.1",
+  "appId": "87dd625487918941ca1201bf9caf8da43eb74b52",
+  "windowSettings": {
+    "x": 1579,
+    "y": 425,
+    "width": 1024,
+    "height": 1251,
+    "fullScreen": false,
+    "maximized": false
+  },
+  "registration": {
+    "email": "fenrirpride@gmail.com",
+    "status": "activated",
+    "loginType": "github",
+    "providerToken": {
+      "access_token": "07815a855958df7cb98568a030bdf2f58448fc2c",
+      "token_type": "bearer",
+      "scope": "admin:public_key,repo,user:email,workflow",
+      "expires_at": null
+    },
+    "date": "2019-11-24T12:04:58.563Z",
+    "EULA": {
+      "version": "1.5.0",
+      "status": "agree_verified"
+    }
+  },
+  "userId": "1e3cf31e-00b7-48c8-8067-acb1d1cc137f",
+  "licensedFeatures": [
+    "individual",
+    "version6LegacyTrial"
+  ],
+  "userFeatures": [
+    {
+      "betaFeaturesEnabled": false,
+      "name": "gitkraken"
+    },
+    {
+      "betaFeaturesEnabled": false,
+      "name": "glo"
+    },
+    {
+      "betaFeaturesEnabled": false,
+      "name": "timelines"
+    }
+  ],
+  "hasSeenNewUserOnboarding": true
+}

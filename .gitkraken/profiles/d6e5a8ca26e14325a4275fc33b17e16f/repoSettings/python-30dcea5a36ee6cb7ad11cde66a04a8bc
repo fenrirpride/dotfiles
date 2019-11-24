@@ -1,0 +1,36 @@
+{
+  "remoteParents": {
+    "github": {
+      "fenrirpride": {
+        "python": {
+          "hostingServiceType": "github",
+          "owner": "fenrirpride",
+          "name": "python"
+        },
+        "dotfiles": {
+          "hostingServiceType": "github",
+          "owner": "fenrirpride",
+          "name": "dotfiles"
+        }
+      }
+    }
+  },
+  "remoteHeadCollectionByRemoteName": {
+    "origin": {
+      "HEAD": {
+        "name": "HEAD",
+        "oid": "6c80f357870f9593f8aca1d876b0f6a5afa2febc",
+        "local": 0,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": "refs/heads/master"
+      },
+      "refs/heads/master": {
+        "name": "refs/heads/master",
+        "oid": "6c80f357870f9593f8aca1d876b0f6a5afa2febc",
+        "local": 1,
+        "loid": "0000000000000000000000000000000000000000",
+        "symrefTarget": null
+      }
+    }
+  }
+}

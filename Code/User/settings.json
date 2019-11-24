@@ -1,0 +1,113 @@
+{
+	// editor
+	// エディタのフォントサイズ
+	"editor.fontSize": 22,
+	// エディタのフォント
+	// "editor.fontFamily": "'Source Code Pro for Powerline'",
+	"editor.fontFamily": "'Fira Code Retina'",
+	// 空白文字を強調表示する
+	"editor.renderWhitespace": "none",
+	// 行の折り返しをする
+	"editor.wordWrap": "on",
+	// 保存時フォーマットする
+	"editor.formatOnSave": true,
+	// 入力時フォーマットする
+	"editor.formatOnType": true,
+	// ドラッグ・アンド・ドロップでテキストを移動する
+	"editor.dragAndDrop": false,
+	// 制御文字を表示する
+	"editor.renderControlCharacters": true,
+	// 最終行を超えてもスクロールするs
+	"editor.scrollBeyondLastLine": false,
+	// タブ補完を有効にする
+	"editor.tabCompletion": "on",
+	// 検索対象を選択範囲に限定する
+	"editor.find.autoFindInSelection": "always",
+	// 合字を有効にする
+	"editor.fontLigatures": true,
+	// ミニマップを無効にする
+	"editor.minimap.enabled": false,
+	// インデントガイドを表示する
+	"editor.renderIndentGuides": true,
+	// files
+	// ファイルとフォルダを除外する
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true
+	},
+	// ファイルと言語の関連付け
+	"files.associations": {
+		"*.html": "html"
+	},
+	// ファイル監視から除外するファイルパスのパターン
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/images/**": true
+	},
+	// 最終行に空白行を挿入する
+	"files.insertFinalNewline": true,
+	// 最終行以降の空白行を削除する
+	"files.trimFinalNewlines": true,
+	// 行末の空白を削除する
+	"files.trimTrailingWhitespace": true,
+	// explorer
+	// 「開いているエディタ」に表示するエディタの数
+	"explorer.openEditors.visible": 50,
+	// 削除時確認する
+	"explorer.confirmDelete": false,
+	// debug
+	// 特定ファイルにデバッグポイントを設定する
+	"debug.allowBreakpointsEverywhere": true,
+	// デバッグコンソールのフォント
+	"debug.console.fontFamily": "'Source Code Pro for Powerline'",
+	// デバッグコンソールのフォントサイズ
+	"debug.console.fontSize": 18,
+	// terminal
+	// ターミナルで選択したテキストがクリップボードにコピーされる
+	"terminal.integrated.copyOnSelection": true,
+	// ターミナルのフォントサイズ
+	"terminal.integrated.fontSize": 18,
+	// 小文字のみで検索すると大文字小文字を区別しない
+	"search.smartCase": true,
+	// emmet
+	// emmet省略記法を変換候補として表示する
+	"emmet.showAbbreviationSuggestions": true,
+	// tabキーでemmet変換候補を挿入する
+	"emmet.triggerExpansionOnTab": true,
+	// emmet候補をスニペットとして表示する
+	"emmet.showSuggestionsAsSnippets": true,
+	// emmet内で用いる変数設定
+	"emmet.variables": {
+		"lang": "ja"
+	},
+	// eslint
+	// 保存時自動でeslintを実行する
+	"eslint.autoFixOnSave": true,
+	// markdown
+	// markdownプレビューのフォントサイズ
+	"markdown.preview.fontSize": 18,
+	// workbench
+	// 起動時前回のエディタで開いていたファイルを開く
+	"workbench.startupEditor": "none",
+	// 設定をjson形式で開く
+	"workbench.settings.editor": "json",
+	// カラーテーマ
+	"workbench.colorTheme": "Dracula",
+	// ファイルアイコン
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	// タブキーで挿入されるスペースの数
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	// dictionary
+	// spell checkerの辞書設定
+	"cSpell.userWords": [],
+	"explorer.confirmDragAndDrop": false,
+	"window.zoomLevel": 0
+}
