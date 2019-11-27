@@ -2,7 +2,7 @@
 set -g fish_user_paths "/home/linuxbrew/.linuxbrew/bin" $fish_user_paths
 # alias
 # to update
-alias update='sudo apt update; sudo apt -y upgrade; sudo apt -y full-upgrade; sudo apt -y autoclean; sudo apt -y autoremove'
+alias update='sudo apt update; sudo apt -y upgrade; sudo apt -y full-upgrade; sudo apt -y autoclean; sudo apt -y autoremove;flatpak update;snap refresh;brew update;brew upgrade'
 # output code extensions
 alias code_out='code --list-extensions > ~/dotfiles/vscode/extensions_list.txt'
 # ghq
