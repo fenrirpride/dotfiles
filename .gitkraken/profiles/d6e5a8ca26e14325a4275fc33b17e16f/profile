@@ -12,6 +12,10 @@
         "type": "REPO",
         "repoName": "dotfiles",
         "repoPath": "/home/yukio/dotfiles/"
+      },
+      {
+        "id": "0402ccb6-49e1-4370-9f84-cd6f556f76be",
+        "type": "NEW"
       }
     ],
     "selectedTabId": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d"

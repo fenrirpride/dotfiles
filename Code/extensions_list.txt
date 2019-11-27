@@ -11,11 +11,15 @@ formulahendry.auto-rename-tag
 IBM.output-colorizer
 kiteco.kite
 mosapride.zenkaku
+mrmlnc.vscode-autoprefixer
+mrmlnc.vscode-csscomb
 mrmlnc.vscode-duplicate
 MS-CEINTL.vscode-language-pack-ja
 ms-python.python
 oderwat.indent-rainbow
+pranaygp.vscode-css-peek
 redhat.vscode-yaml
+ritwickdey.live-sass
 ritwickdey.LiveServer
 ryu1kn.partial-diff
 sgryjp.japanese-word-handler
@@ -23,6 +27,7 @@ shardulm94.trailing-spaces
 shuworks.vscode-table-formatter
 streetsidesoftware.code-spell-checker
 vscode-icons-team.vscode-icons
+vscoss.vscode-ansible
 wmaurer.vscode-jumpy
 yzhang.markdown-all-in-one
 Zignd.html-css-class-completion

@@ -5,8 +5,10 @@
     "description": "gmail", 
     "abbreviation": {
         "wordChars": "[\\w]", 
-        "abbreviations": [], 
-        "immediate": false, 
+        "abbreviations": [
+            "gmail;"
+        ], 
+        "immediate": true, 
         "ignoreCase": false, 
         "backspace": true, 
         "triggerInside": false
@@ -15,7 +17,9 @@
         "hotKey": null, 
         "modifiers": []
     }, 
-    "modes": [], 
+    "modes": [
+        1
+    ], 
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
