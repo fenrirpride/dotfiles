@@ -14,8 +14,10 @@
         "repoPath": "/home/yukio/dotfiles/"
       },
       {
-        "id": "0402ccb6-49e1-4370-9f84-cd6f556f76be",
-        "type": "NEW"
+        "id": "d0ebe871-08ab-4a18-b8af-909d5c15e674",
+        "type": "REPO",
+        "repoName": "ansible",
+        "repoPath": "/home/yukio/ansible/"
       }
     ],
     "selectedTabId": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d"

@@ -1,20 +1,4 @@
 {
-  "remoteParents": {
-    "github": {
-      "fenrirpride": {
-        "dotfiles": {
-          "hostingServiceType": "github",
-          "owner": "fenrirpride",
-          "name": "dotfiles"
-        },
-        "ansible": {
-          "hostingServiceType": "github",
-          "owner": "fenrirpride",
-          "name": "ansible"
-        }
-      }
-    }
-  },
   "remoteHeadCollectionByRemoteName": {
     "origin": {
       "HEAD": {

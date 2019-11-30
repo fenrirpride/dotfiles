@@ -1,6 +1,7 @@
 {
   "localRepoCache": [
     "/home/yukio/dotfiles/.git",
+    "/home/yukio/ansible/.git",
     "/home/yukio/MyCode/python/.git"
   ]
 }

@@ -2,15 +2,10 @@
   "remoteParents": {
     "github": {
       "fenrirpride": {
-        "python": {
+        "ansible": {
           "hostingServiceType": "github",
           "owner": "fenrirpride",
-          "name": "python"
-        },
-        "dotfiles": {
-          "hostingServiceType": "github",
-          "owner": "fenrirpride",
-          "name": "dotfiles"
+          "name": "ansible"
         }
       }
     }
@@ -19,14 +14,14 @@
     "origin": {
       "HEAD": {
         "name": "HEAD",
-        "oid": "ed70ec0f1fe9d278a3087721bffbb2c4ccb4378a",
+        "oid": "3a335187518c84503797f607c9b9851f977ee6a1",
         "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": "refs/heads/master"
       },
       "refs/heads/master": {
         "name": "refs/heads/master",
-        "oid": "ed70ec0f1fe9d278a3087721bffbb2c4ccb4378a",
+        "oid": "3a335187518c84503797f607c9b9851f977ee6a1",
         "local": 1,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null

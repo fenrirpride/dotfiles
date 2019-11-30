@@ -10,7 +10,7 @@ function update -d "update all packages"
     sudo apt -y full-upgrade
     sudo apt -y autoclean
     sudo apt -y autoremove
-    flatpak update
+    flatpak update -y
     snap refresh
     brew update
     brew upgrade
@@ -23,8 +23,15 @@ end
 function narouu -d "narou update"
     cd /mnt/DATA1/Novel
     narou u
+    cd
 end
 function naroud -d "narou download"
     cd /mnt/DATA1/Novel
     narou d $argv
+    cd
+end
+# backup
+function backup -d "backup"
+    rsync -av --delete ~/ansible /mnt/DATA2/UbuntuBackup
+    rsync -av --delete ~/dotfiles /mnt/DATA2/UbuntuBackup/Files
 end
