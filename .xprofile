@@ -1,0 +1,3 @@
+export XDG_CACHE_HOME=/tmp/.cache-$(whoami)
+mkdir -p ${XDG_CACHE_HOME}
+chmod 700 ${XDG_CACHE_HOME}

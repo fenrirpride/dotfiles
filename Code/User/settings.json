@@ -66,12 +66,12 @@
 	// デバッグコンソールのフォント
 	"debug.console.fontFamily": "'Source Code Pro for Powerline'",
 	// デバッグコンソールのフォントサイズ
-	"debug.console.fontSize": 18,
+	"debug.console.fontSize": 16,
 	// terminal
 	// ターミナルで選択したテキストがクリップボードにコピーされる
 	"terminal.integrated.copyOnSelection": true,
 	// ターミナルのフォントサイズ
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 16,
 	// 小文字のみで検索すると大文字小文字を区別しない
 	"search.smartCase": true,
 	// emmet
@@ -90,7 +90,7 @@
 	"eslint.autoFixOnSave": true,
 	// markdown
 	// markdownプレビューのフォントサイズ
-	"markdown.preview.fontSize": 18,
+	"markdown.preview.fontSize": 16,
 	// workbench
 	// 起動時前回のエディタで開いていたファイルを開く
 	"workbench.startupEditor": "none",
