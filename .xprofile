@@ -1,8 +1,8 @@
 export XDG_CACHE_HOME=/dev/shm/.cache-$(whoami)
 mkdir -p ${XDG_CACHE_HOME}
 chmod 700 ${XDG_CACHE_HOME}
-"export XDG_DATA_DIRS=
-"export XDG_DATA_HOME=
-"export XDG_CONFIG_HOME=
-"export XDG_CONFIG_DIRS=
-"export XDG_RUNTIME_DIR=
+#export XDG_DATA_DIRS=
+#export XDG_DATA_HOME=
+#export XDG_CONFIG_HOME=
+#export XDG_CONFIG_DIRS=
+#export XDG_RUNTIME_DIR=

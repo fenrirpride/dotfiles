@@ -1,7 +1,7 @@
 {
 	// editor
 	// エディタのフォントサイズ
-	"editor.fontSize": 22,
+	"editor.fontSize": 18,
 	// エディタのフォント
 	// "editor.fontFamily": "'Source Code Pro for Powerline'",
 	"editor.fontFamily": "'Fira Code Retina'",
@@ -109,5 +109,6 @@
 	// spell checkerの辞書設定
 	"cSpell.userWords": [],
 	"explorer.confirmDragAndDrop": false,
-	"window.zoomLevel": 0
+	"window.zoomLevel": 2,
+	"kite.showWelcomeNotificationOnStartup": false
 }
