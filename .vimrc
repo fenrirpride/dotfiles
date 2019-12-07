@@ -1,3 +1,94 @@
+" plugin manager ---------------------------------------------
+if &compatible
+  set nocompatible
+endif
+
+" プラグインがインストールされるディレクトリ
+let s:dein_dir = expand('~/.vim/dein')
+
+" dein.vim本体
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+endif
+
+" tomlセット
+let s:toml_dir=expand('~/.dein/')
+let s:toml=s:toml_dir . 'dein.toml'
+let s:toml_lazy=s:toml_dir . 'dein-lazy.toml'
+
+" プラグインのロード
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+
+  call dein#load_toml(s:toml)
+  call dein#load_toml(s:toml_lazy, {'lazy': 1})
+
+  call dein#end()
+  call dein#save_state()
+endif
+
+" インストールしていないプラグインがあればインストールを実行
+if dein#check_install()
+  call dein#install()
+endif
+
+" ------------------------------------------------------------
+
+
+""dein Scripts-----------------------------
+"if &compatible
+"  set nocompatible               " Be iMproved
+"endif
+"
+"" Required:
+"set runtimepath+=/home/yukio/.vim/dein/repos/github.com/Shougo/dein.vim
+"
+"" Required:
+"if dein#load_state('/home/yukio/.vim/dein')
+"  call dein#begin('/home/yukio/.vim/dein')
+"
+"  " Let dein manage dein
+"  " Required:
+"  call dein#add('/home/yukio/.vim/dein/repos/github.com/Shougo/dein.vim')
+"
+"  " Add or remove your plugins here like this:
+"  "call dein#add('Shougo/neosnippet.vim')
+"  "call dein#add('Shougo/neosnippet-snippets')
+"  call dein#add('dracula/vim')
+"
+"  " Required:
+"  call dein#end()
+"  call dein#save_state()
+"endif
+"
+"" Required:
+"filetype plugin indent on
+"syntax enable
+"
+"" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+"
+""End dein Scripts-------------------------
+
+
+" プラグイン関係
+" , キーで次タブのバッファを表示
+nnoremap <silent> , :bprev<CR>
+" . キーで前タブのバッファを表示
+nnoremap <silent> . :bnext<CR>
+" bdで現在のバッファを削除
+nnoremap bd :bd<CR>
+
+" シェル指定
+set shell=/usr/bin/fish
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -5,6 +96,8 @@ set fenc=utf-8
 set nobackup
 " スワップファイルを作らない
 set noswapfile
+" タイトルを表示
+set title
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
 " バッファが編集中でもその他のファイルを開けるように

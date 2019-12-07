@@ -35,3 +35,4 @@ function backup -d "backup"
     rsync -av --delete ~/ansible /mnt/DATA2/UbuntuBackup
     rsync -av --delete ~/dotfiles /mnt/DATA2/UbuntuBackup/Files
 end
+status --is-login; and status --is-interactive; and exec byobu-launcher
