@@ -13,7 +13,7 @@ function update -d "update all packages"
     sudo apt -y autoclean
     sudo apt -y autoremove
     flatpak update -y
-    snap refresh
+    sudo snap refresh
     brew update
     brew upgrade
 end
