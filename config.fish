@@ -47,6 +47,6 @@ function backup -d "backup"
     rsync -avL --delete ~/MyCode/dotfiles /mnt/DATA2/UbuntuBackup/Files
     rsync -avL --delete ~/.PyCharmCE2019.3 /mnt/DATA2/UbuntuBackup/Files
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/Themes
-    rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files/
+    rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files
 end
 status --is-login; and status --is-interactive; and exec byobu-launcher
