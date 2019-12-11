@@ -19,11 +19,11 @@ function update -d "update all packages"
 end
 # output code extensions
 function code_out -d "make list vscode extensions"
-    code --list-extensions > ~/dotfiles/Code/extensions_list.txt
+    code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 # view code extensions
 function view_ex -d "make list vscode extensions"
-    cat ~/dotfiles/Code/extensions_list.txt
+    cat ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 # narou
 function narouu -d "narou update"
@@ -43,7 +43,10 @@ function epub -d "epub upload dropbox"
 end
 # backup
 function backup -d "backup"
-    rsync -av --delete ~/ansible /mnt/DATA2/UbuntuBackup
-    rsync -av --delete ~/dotfiles /mnt/DATA2/UbuntuBackup/Files
+    rsync -avL --delete ~/MyCode/ansible /mnt/DATA2/UbuntuBackup
+    rsync -avL --delete ~/MyCode/dotfiles /mnt/DATA2/UbuntuBackup/Files
+    rsync -avL --delete ~/.PyCharmCE2019.3 /mnt/DATA2/UbuntuBackup/Files
+    rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/Themes
+    rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files/
 end
 status --is-login; and status --is-interactive; and exec byobu-launcher

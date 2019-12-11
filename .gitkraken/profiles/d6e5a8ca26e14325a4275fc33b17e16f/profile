@@ -2,25 +2,31 @@
   "tabInfo": {
     "tabs": [
       {
-        "id": "eb2fe4d0-c777-4685-91b2-03b57cd7be28",
+        "id": "d41fe21e-5c68-43ed-9c1b-9c060a33fa4a",
+        "type": "REPO",
+        "repoName": "Novel",
+        "repoPath": "/home/yukio/MyCode/Novel/"
+      },
+      {
+        "id": "bd349881-47d4-4d8d-9737-c703e7000e0d",
+        "type": "REPO",
+        "repoName": "ansible",
+        "repoPath": "/home/yukio/MyCode/ansible/"
+      },
+      {
+        "id": "e338ba9e-c145-475a-ab64-c23d76d09878",
+        "type": "REPO",
+        "repoName": "dotfiles",
+        "repoPath": "/home/yukio/MyCode/dotfiles/"
+      },
+      {
+        "id": "cae01593-a232-40cc-8ace-b876d2c3a2fe",
         "type": "REPO",
         "repoName": "python",
         "repoPath": "/home/yukio/MyCode/python/"
-      },
-      {
-        "id": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d",
-        "type": "REPO",
-        "repoName": "dotfiles",
-        "repoPath": "/home/yukio/dotfiles/"
-      },
-      {
-        "id": "d0ebe871-08ab-4a18-b8af-909d5c15e674",
-        "type": "REPO",
-        "repoName": "ansible",
-        "repoPath": "/home/yukio/ansible/"
       }
     ],
-    "selectedTabId": "bf5b57d8-2e3f-47bb-976a-d15195a6f47d"
+    "selectedTabId": "e338ba9e-c145-475a-ab64-c23d76d09878"
   },
   "profileIcon": "gravatar",
   "profileName": "Default Profile",
