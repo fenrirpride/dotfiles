@@ -6,16 +6,6 @@
           "hostingServiceType": "github",
           "owner": "fenrirpride",
           "name": "python"
-        },
-        "dotfiles": {
-          "hostingServiceType": "github",
-          "owner": "fenrirpride",
-          "name": "dotfiles"
-        },
-        "ansible": {
-          "hostingServiceType": "github",
-          "owner": "fenrirpride",
-          "name": "ansible"
         }
       }
     }

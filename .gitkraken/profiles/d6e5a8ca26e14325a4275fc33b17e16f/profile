@@ -25,5 +25,10 @@
   "profileIcon": "gravatar",
   "profileName": "Default Profile",
   "userEmail": "fenrirpride@gmail.com",
-  "userName": "yukio"
+  "userName": "yukio",
+  "layout": {
+    "DetailPanel": {
+      "width": 400
+    }
+  }
 }
