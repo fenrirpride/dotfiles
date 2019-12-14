@@ -371,3 +371,18 @@
 2019-12-11 16:47:25,680 INFO - interface - XRecord interface thread starting
 2019-12-11 16:47:25,697 INFO - service - Service now marked as running
 2019-12-11 16:47:26,274 INFO - root - Entering main()
+2019-12-14 11:35:25,856 INFO - root - Initialising application
+2019-12-14 11:35:25,868 INFO - root - Initialise global hotkeys
+2019-12-14 11:35:25,868 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2019-12-14 11:35:25,871 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-12-14 11:35:25,871 INFO - config-manager - Successfully loaded configuration
+2019-12-14 11:35:25,871 INFO - service - Starting service
+2019-12-14 11:35:26,275 INFO - interface - XRecord interface thread starting
+2019-12-14 11:35:26,287 INFO - service - Service now marked as running
+2019-12-14 11:35:26,800 INFO - root - Entering main()
+2019-12-14 23:17:25,854 INFO - root - Displaying configuration window
+2019-12-14 23:17:52,341 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-12-14 23:17:54,385 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-12-14 23:17:54,387 INFO - config-manager - Persisting configuration
+2019-12-14 23:17:54,387 INFO - config-manager - Backing up existing config file
+2019-12-14 23:17:54,389 INFO - config-manager - Finished persisting configuration - no errors

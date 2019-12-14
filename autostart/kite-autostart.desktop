@@ -1,7 +1,7 @@
 [Desktop Entry]
 NoDisplay=true
 Type=Application
-Version=2.20191205.2
+Version=2.20191213.0
 Name=Kite
 Comment=Kite - ML powered code completions
 Exec=/home/yukio/.local/share/kite/kited --system-boot

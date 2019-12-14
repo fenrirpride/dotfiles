@@ -22,7 +22,7 @@ function code_out -d "make list vscode extensions"
     code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 # view code extensions
-function view_ex -d "make list vscode extensions"
+function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 # narou
@@ -49,4 +49,13 @@ function backup -d "backup"
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/Themes
     rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files
 end
+function view_fish -d "view fish settings"
+    cat ~/.config/fish/config.fish
+end
+function edit_fish -d "edit fish settings"
+    vim ~/.config/fish/config.fish
+end
+function view_functions -d "list functions"
+     grep "^function" ./.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "==Funcsions=="} {print $2,$4,$5,$6} END {print "=====END====="}'
+end   
 status --is-login; and status --is-interactive; and exec byobu-launcher

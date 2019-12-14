@@ -109,6 +109,6 @@
 	// spell checkerの辞書設定
 	"cSpell.userWords": [],
 	"explorer.confirmDragAndDrop": false,
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 0,
 	"kite.showWelcomeNotificationOnStartup": false
 }
