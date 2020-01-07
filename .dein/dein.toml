@@ -59,3 +59,18 @@ hook_add = '''
   let g:closetag_emptyTags_caseSensitive=1
   let g:closetag_shortcut='>'
 '''
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = ''
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+hook_add = ''
+[[plugins]]
+repo = 'ervandew/supertab'
+hook_add = ''
+[[plugins]]
+repo = 'tpope/vim-surround'
+hook_add = ''
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = ''

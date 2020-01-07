@@ -77,6 +77,8 @@ endif
 "
 ""End dein Scripts-------------------------
 
+"for fzf
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 
 " プラグイン関係
 " , キーで次タブのバッファを表示

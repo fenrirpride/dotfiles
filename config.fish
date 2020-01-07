@@ -43,11 +43,12 @@ function epub -d "epub upload dropbox"
 end
 # backup
 function backup -d "backup"
-    rsync -avL --delete ~/MyCode/ansible /mnt/DATA2/UbuntuBackup
+    rsync -avL --delete ~/MyCode/ansible /mnt/DATA2/Backup
     rsync -avL --delete ~/MyCode/dotfiles /mnt/DATA2/UbuntuBackup/Files
     rsync -avL --delete ~/.PyCharmCE2019.3 /mnt/DATA2/UbuntuBackup/Files
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/Themes
     rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files
+    rsync -avL --delete ~/MyCode/wordpress /mnt/DATA2/UbuntuBackup
 end
 function view_fish -d "view fish settings"
     cat ~/.config/fish/config.fish
@@ -57,5 +58,5 @@ function edit_fish -d "edit fish settings"
 end
 function view_functions -d "list functions"
      grep "^function" ./.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "==Funcsions=="} {print $2,$4,$5,$6} END {print "=====END====="}'
-end   
+end
 status --is-login; and status --is-interactive; and exec byobu-launcher

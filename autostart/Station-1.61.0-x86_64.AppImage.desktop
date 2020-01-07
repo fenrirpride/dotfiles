@@ -6,3 +6,4 @@ Comment=Station-1.61.0-x86_64.AppImagestartup script
 Exec=/home/yukio/.AppImages/Station-1.61.0-x86_64.AppImage
 StartupNotify=false
 Terminal=false
+X-GNOME-Autostart-enabled=false
