@@ -485,6 +485,7 @@
 2020-01-02 12:21:07,444 INFO - interface - XRecord interface thread starting
 2020-01-02 12:21:07,449 INFO - service - Service now marked as running
 2020-01-02 12:21:07,791 INFO - root - Entering main()
+<<<<<<< Updated upstream
 2020-01-02 12:38:08,916 INFO - root - Initialising application
 2020-01-02 12:38:08,938 INFO - root - Initialise global hotkeys
 2020-01-02 12:38:08,938 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
@@ -530,3 +531,33 @@
 2020-01-07 10:41:18,517 INFO - interface - XRecord interface thread starting
 2020-01-07 10:41:18,528 INFO - service - Service now marked as running
 2020-01-07 10:41:18,972 INFO - root - Entering main()
+=======
+2020-01-07 11:55:29,755 INFO - config-manager - Reloading global configuration
+2020-01-07 11:55:29,755 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:29,755 INFO - config-manager - Successfully reloaded global configuration
+2020-01-07 11:55:31,758 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:32,258 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:32,759 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:33,260 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:33,761 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:34,262 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:34,762 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:35,263 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:35,764 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:36,265 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:36,766 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:37,267 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:37,768 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:38,269 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:38,769 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:39,270 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:39,771 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:40,272 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:40,774 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:41,275 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:41,776 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:42,276 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:42,777 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:43,278 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-07 11:55:43,779 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+>>>>>>> Stashed changes

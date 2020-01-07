@@ -5,3 +5,4 @@
 [Sat Nov 30 2019 12:10:48 GMT+0900 (日本標準時)] Repository Deletion Failed: Repository ansible could not be deleted!
 [Sat Nov 30 2019 12:10:58 GMT+0900 (日本標準時)] Open Failed: Could not find a compatible repository at 'ansible'.
 [Sat Nov 30 2019 12:11:03 GMT+0900 (日本標準時)] Open Failed: Could not find a compatible repository at 'ansible'.
+[Tue Jan 07 2020 11:58:01 GMT+0900 (日本標準時)] Pull Failed:
