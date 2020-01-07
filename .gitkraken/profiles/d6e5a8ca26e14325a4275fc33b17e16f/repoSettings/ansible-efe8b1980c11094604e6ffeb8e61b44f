@@ -17,17 +17,10 @@
   },
   "remoteHeadCollectionByRemoteName": {
     "origin": {
-      "HEAD": {
-        "name": "HEAD",
-        "oid": "77016d5d2962fba0c94ff6aa5c79419b5ebd2e83",
-        "local": 0,
-        "loid": "0000000000000000000000000000000000000000",
-        "symrefTarget": "refs/heads/master"
-      },
       "refs/heads/master": {
         "name": "refs/heads/master",
-        "oid": "77016d5d2962fba0c94ff6aa5c79419b5ebd2e83",
-        "local": 1,
+        "oid": "f01627aadd4e11172ac5c9f3b158a4f596d1c59f",
+        "local": 0,
         "loid": "0000000000000000000000000000000000000000",
         "symrefTarget": null
       }

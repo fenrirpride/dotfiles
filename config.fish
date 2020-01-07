@@ -43,12 +43,24 @@ function epub -d "epub upload dropbox"
 end
 # backup
 function backup -d "backup"
-    rsync -avL --delete ~/MyCode/ansible /mnt/DATA2/Backup
-    rsync -avL --delete ~/MyCode/dotfiles /mnt/DATA2/UbuntuBackup/Files
-    rsync -avL --delete ~/.PyCharmCE2019.3 /mnt/DATA2/UbuntuBackup/Files
+    rsync -avL --delete ~/MyCode/ansible/ /mnt/DATA2/UbuntuBackup/ansible
+    rsync -avL --delete ~/MyCode/dotfiles/ /mnt/DATA2/UbuntuBackup/Files/dotfiles
+    rsync -avL --delete ~/.PyCharmCE2019.3/ /mnt/DATA2/UbuntuBackup/Files/.PyCharmCE2019.3
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/Themes
-    rsync -avL --delete ~/.ssh /mnt/DATA2/UbuntuBackup/Files
-    rsync -avL --delete ~/MyCode/wordpress /mnt/DATA2/UbuntuBackup
+    rsync -avL --delete ~/.ssh/ /mnt/DATA2/UbuntuBackup/Files/.ssh
+    rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
+end
+function data_backup -d "data ackup"
+    rsync -avL --delete /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
+    rsync -avL --delete /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
+    rsync -avL --delete /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
+    rsync -avL --delete /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
+    rsync -avL --delete /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
+    rsync -avL --delete /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
+    rsync -avL --delete /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
+    rsync -avL --delete /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
+    rsync -avL --delete /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
+    rsync -avL --delete /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
 end
 function view_fish -d "view fish settings"
     cat ~/.config/fish/config.fish
