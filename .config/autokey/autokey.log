@@ -1,0 +1,219 @@
+2020-01-10 00:01:34,390 INFO - root - Initialising application
+2020-01-10 00:01:34,394 INFO - root - Initialise global hotkeys
+2020-01-10 00:01:34,394 INFO - config-manager - No configuration found - creating new one
+2020-01-10 00:01:34,396 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:01:34,397 INFO - config-manager - Persisting configuration
+2020-01-10 00:01:34,397 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:01:34,397 INFO - service - Starting service
+2020-01-10 00:01:34,444 INFO - interface - XRecord interface thread starting
+2020-01-10 00:01:34,445 INFO - service - Service now marked as running
+2020-01-10 00:01:34,517 INFO - root - Displaying configuration window
+2020-01-10 00:01:34,693 INFO - root - Entering main()
+2020-01-10 00:01:56,073 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:01:56,073 INFO - config-manager - Persisting configuration
+2020-01-10 00:01:56,073 INFO - config-manager - Backing up existing config file
+2020-01-10 00:01:56,075 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:02:12,798 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:12,808 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:12,812 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:12,814 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:13,150 INFO - service - Undoing last abbreviation expansion
+2020-01-10 00:02:13,191 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:15,110 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:15,116 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:15,123 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:15,125 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:15,637 INFO - service - Undoing last abbreviation expansion
+2020-01-10 00:02:15,676 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2020-01-10 00:02:26,815 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:02:30,396 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:02:30,397 INFO - config-manager - Persisting configuration
+2020-01-10 00:02:30,397 INFO - config-manager - Backing up existing config file
+2020-01-10 00:02:30,400 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:02:33,220 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:02:33,221 INFO - config-manager - Persisting configuration
+2020-01-10 00:02:33,221 INFO - config-manager - Backing up existing config file
+2020-01-10 00:02:33,225 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:02:36,220 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:02:36,220 INFO - config-manager - Persisting configuration
+2020-01-10 00:02:36,221 INFO - config-manager - Backing up existing config file
+2020-01-10 00:02:36,224 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:02:38,702 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:02:38,702 INFO - config-manager - Persisting configuration
+2020-01-10 00:02:38,702 INFO - config-manager - Backing up existing config file
+2020-01-10 00:02:38,706 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:03:02,423 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:03:29,142 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:13:28,064 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:13:28,065 INFO - config-manager - Persisting configuration
+2020-01-10 00:13:28,065 INFO - config-manager - Backing up existing config file
+2020-01-10 00:13:28,066 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 00:33:38,666 INFO - root - Initialising application
+2020-01-10 00:33:38,690 INFO - root - Initialise global hotkeys
+2020-01-10 00:33:38,691 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 00:33:38,695 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 00:33:38,696 INFO - config-manager - Successfully loaded configuration
+2020-01-10 00:33:38,696 INFO - service - Starting service
+2020-01-10 00:33:38,795 INFO - interface - XRecord interface thread starting
+2020-01-10 00:33:38,800 INFO - service - Service now marked as running
+2020-01-10 00:33:38,900 INFO - root - Entering main()
+2020-01-10 09:33:43,584 INFO - root - Initialising application
+2020-01-10 09:33:43,600 INFO - root - Initialise global hotkeys
+2020-01-10 09:33:43,601 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 09:33:43,609 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 09:33:43,609 INFO - config-manager - Successfully loaded configuration
+2020-01-10 09:33:43,610 INFO - service - Starting service
+2020-01-10 09:33:43,753 INFO - interface - XRecord interface thread starting
+2020-01-10 09:33:43,754 INFO - service - Service now marked as running
+2020-01-10 09:33:44,276 INFO - root - Entering main()
+2020-01-10 09:36:19,586 INFO - root - Initialising application
+2020-01-10 09:36:19,614 INFO - root - Initialise global hotkeys
+2020-01-10 09:36:19,614 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 09:36:19,618 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 09:36:19,618 INFO - config-manager - Successfully loaded configuration
+2020-01-10 09:36:19,619 INFO - service - Starting service
+2020-01-10 09:36:19,782 INFO - interface - XRecord interface thread starting
+2020-01-10 09:36:19,791 INFO - service - Service now marked as running
+2020-01-10 09:36:20,042 INFO - root - Entering main()
+2020-01-10 10:07:33,662 INFO - root - Displaying configuration window
+2020-01-10 10:08:18,859 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:08:47,470 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:08:47,470 INFO - config-manager - Persisting configuration
+2020-01-10 10:08:47,470 INFO - config-manager - Backing up existing config file
+2020-01-10 10:08:47,471 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 10:10:08,427 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:10:08,427 INFO - config-manager - Persisting configuration
+2020-01-10 10:10:08,428 INFO - config-manager - Backing up existing config file
+2020-01-10 10:10:08,428 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 10:10:11,360 INFO - root - Displaying configuration window
+2020-01-10 10:10:51,079 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:11:16,380 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:11:16,381 INFO - config-manager - Persisting configuration
+2020-01-10 10:11:16,382 INFO - config-manager - Backing up existing config file
+2020-01-10 10:11:16,383 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 10:11:20,336 INFO - root - Displaying configuration window
+2020-01-10 10:11:32,629 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 10:11:32,630 INFO - config-manager - Persisting configuration
+2020-01-10 10:11:32,630 INFO - config-manager - Backing up existing config file
+2020-01-10 10:11:32,631 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 11:16:19,441 INFO - root - Initialising application
+2020-01-10 11:16:19,467 INFO - root - Initialise global hotkeys
+2020-01-10 11:16:19,468 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 11:16:19,472 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 11:16:19,472 INFO - config-manager - Successfully loaded configuration
+2020-01-10 11:16:19,472 INFO - service - Starting service
+2020-01-10 11:16:19,629 INFO - interface - XRecord interface thread starting
+2020-01-10 11:16:19,635 INFO - service - Service now marked as running
+2020-01-10 11:16:19,866 INFO - root - Entering main()
+2020-01-10 11:18:04,119 INFO - root - Initialising application
+2020-01-10 11:18:04,158 INFO - root - Initialise global hotkeys
+2020-01-10 11:18:04,158 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 11:18:04,163 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 11:18:04,163 INFO - config-manager - Successfully loaded configuration
+2020-01-10 11:18:04,163 INFO - service - Starting service
+2020-01-10 11:18:04,350 INFO - service - Service now marked as running
+2020-01-10 11:18:04,356 INFO - interface - XRecord interface thread starting
+2020-01-10 11:18:04,533 INFO - root - Entering main()
+2020-01-10 12:36:58,254 INFO - root - Displaying configuration window
+2020-01-10 12:37:00,274 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 12:37:00,274 INFO - config-manager - Persisting configuration
+2020-01-10 12:37:00,275 INFO - config-manager - Backing up existing config file
+2020-01-10 12:37:00,276 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-10 13:17:55,271 INFO - root - Initialising application
+2020-01-10 13:17:55,301 INFO - root - Initialise global hotkeys
+2020-01-10 13:17:55,301 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 13:17:55,305 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 13:17:55,305 INFO - config-manager - Successfully loaded configuration
+2020-01-10 13:17:55,305 INFO - service - Starting service
+2020-01-10 13:17:55,550 INFO - interface - XRecord interface thread starting
+2020-01-10 13:17:55,551 INFO - service - Service now marked as running
+2020-01-10 13:17:55,779 INFO - root - Entering main()
+2020-01-10 15:29:53,721 INFO - root - Initialising application
+2020-01-10 15:29:53,778 INFO - root - Initialise global hotkeys
+2020-01-10 15:29:53,779 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-10 15:29:53,797 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-10 15:29:53,798 INFO - config-manager - Successfully loaded configuration
+2020-01-10 15:29:53,798 INFO - service - Starting service
+2020-01-10 15:29:54,034 INFO - interface - XRecord interface thread starting
+2020-01-10 15:29:54,036 INFO - service - Service now marked as running
+2020-01-10 15:29:54,399 INFO - root - Entering main()
