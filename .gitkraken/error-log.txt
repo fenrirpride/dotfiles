@@ -1,8 +1,0 @@
-[Sat Nov 30 2019 12:04:28 GMT+0900 (日本標準時)] Push Failed: master: Push failed on refs/heads/master: pre-receive hook declined
-[Sat Nov 30 2019 12:05:01 GMT+0900 (日本標準時)] Push Failed: master: Push failed on refs/heads/master: pre-receive hook declined
-[Sat Nov 30 2019 12:10:00 GMT+0900 (日本標準時)] Staging paths failed: Could not stage paths for the following reason: Error: object not found - cannot read header for (d021d149d40d7418ec9b0f78d64f423e1cf2028d)
-[Sat Nov 30 2019 12:10:12 GMT+0900 (日本標準時)] Unstaging paths failed: Could not unstage paths for the following reason: undefined
-[Sat Nov 30 2019 12:10:48 GMT+0900 (日本標準時)] Repository Deletion Failed: Repository ansible could not be deleted!
-[Sat Nov 30 2019 12:10:58 GMT+0900 (日本標準時)] Open Failed: Could not find a compatible repository at 'ansible'.
-[Sat Nov 30 2019 12:11:03 GMT+0900 (日本標準時)] Open Failed: Could not find a compatible repository at 'ansible'.
-[Tue Jan 07 2020 11:58:01 GMT+0900 (日本標準時)] Pull Failed:
