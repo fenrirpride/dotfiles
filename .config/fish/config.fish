@@ -51,6 +51,7 @@ function backup -d "backup"
     rsync -avL --delete ~/.ssh/ /mnt/DATA2/UbuntuBackup/Files/.ssh
     rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
     rsync -avL --delete ~/.AppImages /mnt/DATA2/UbuntuBackup/Files/.AppImages
+    rsync -avL --delete ~/.goldendict/dict/ /mnt/DATA2/UbuntuBackup/Files/dict
 end
 function data_backup -d "data backup"
     rsync -avL --delete /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
@@ -69,6 +70,9 @@ function view_fish -d "view fish settings"
 end
 function edit_fish -d "edit fish settings"
     vim ~/.config/fish/config.fish
+end
+function update_fish -d "edit fish settings"
+    source ~/.config/fish/config.fish
 end
 function view_functions -d "list functions"
      grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "==Funcsions=="} {print $2,$4,$5,$6} END {print "=====END====="}'
