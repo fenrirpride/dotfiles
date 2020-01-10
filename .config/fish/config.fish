@@ -50,6 +50,7 @@ function backup -d "backup"
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/.themes
     rsync -avL --delete ~/.ssh/ /mnt/DATA2/UbuntuBackup/Files/.ssh
     rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
+    rsync -avL --delete ~/.AppImages /mnt/DATA2/UbuntuBackup/Files/.AppImages
 end
 function data_backup -d "data backup"
     rsync -avL --delete /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes

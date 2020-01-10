@@ -11,6 +11,9 @@ ln -sf ~/MyCode/dotfiles/dein/dein-lazy.toml ~/.vim/dein
 ln -sf ~/MyCode/dotfiles/Code/settings.json ~/.config/Code/User
 ln -sf ~/MyCode/dotfiles/Code/keybindings.json ~/.config/Code/User
 
+# install dotfiles
+sudo ln -sf ~/MyCode/dotfiles/xkeysnail /etc/opt/xkeysnail
+
 # set PATH
 DOTFILES=~/MyCode/dotfiles
 
