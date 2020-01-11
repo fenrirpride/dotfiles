@@ -39,8 +39,9 @@ function naroud -d "narou download"
 end
 function epub -d "epub upload dropbox"
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
-    cp -u "$line" /mnt/DATA1/online/Dropbox/epub > /dev/null
+    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
     end
+    echo -e "\e[32mupdated!\e[m"
 end
 # backup
 function backup -d "backup"
@@ -52,6 +53,7 @@ function backup -d "backup"
     rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
     rsync -avL --delete ~/.AppImages /mnt/DATA2/UbuntuBackup/Files/.AppImages
     rsync -avL --delete ~/.goldendict/dict/ /mnt/DATA2/UbuntuBackup/Files/dict
+    rsync -avL --delete /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
 end
 function data_backup -d "data backup"
     rsync -avL --delete /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
@@ -71,7 +73,7 @@ end
 function edit_fish -d "edit fish settings"
     vim ~/.config/fish/config.fish
 end
-function update_fish -d "edit fish settings"
+function update_fish -d "update fish settings"
     source ~/.config/fish/config.fish
 end
 function view_functions -d "list functions"
