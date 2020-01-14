@@ -307,3 +307,21 @@ AttributeError: ConfigManager instance has no attribute 'workAroundApps'
 2020-01-11 14:15:59,184 INFO - interface - XRecord interface thread starting
 2020-01-11 14:15:59,196 INFO - service - Service now marked as running
 2020-01-11 14:15:59,697 INFO - root - Entering main()
+2020-01-14 05:51:03,608 INFO - root - Initialising application
+2020-01-14 05:51:03,628 INFO - root - Initialise global hotkeys
+2020-01-14 05:51:03,628 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-14 05:51:03,658 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-14 05:51:03,660 INFO - config-manager - Successfully loaded configuration
+2020-01-14 05:51:03,660 INFO - service - Starting service
+2020-01-14 05:51:03,938 INFO - interface - XRecord interface thread starting
+2020-01-14 05:51:03,951 INFO - service - Service now marked as running
+2020-01-14 05:51:04,276 INFO - root - Entering main()
+2020-01-14 20:43:29,739 INFO - root - Initialising application
+2020-01-14 20:43:29,767 INFO - root - Initialise global hotkeys
+2020-01-14 20:43:29,767 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-14 20:43:29,770 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-14 20:43:29,770 INFO - config-manager - Successfully loaded configuration
+2020-01-14 20:43:29,770 INFO - service - Starting service
+2020-01-14 20:43:30,054 INFO - interface - XRecord interface thread starting
+2020-01-14 20:43:30,068 INFO - service - Service now marked as running
+2020-01-14 20:43:30,410 INFO - root - Entering main()

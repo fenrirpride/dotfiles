@@ -22,6 +22,9 @@ end
 function code_out -d "make list vscode extensions"
     code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt
 end
+function code_in -d "install vscode extensions"
+    sh ~/MyCode/dotfiles/.config/fish/code_in.sh
+end
 # view code extensions
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
@@ -40,6 +43,7 @@ end
 function epub -d "epub upload dropbox"
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
+    cp -u "$line" ~/pCloudDrive/epub
     end
     echo -e "\e[32mupdated!\e[m"
 end
@@ -51,7 +55,7 @@ function backup -d "backup"
     rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/.themes
     rsync -avL --delete ~/.ssh/ /mnt/DATA2/UbuntuBackup/Files/.ssh
     rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
-    rsync -avL --delete ~/.AppImages /mnt/DATA2/UbuntuBackup/Files/.AppImages
+    rsync -avL --delete ~/.AppImages/ /mnt/DATA2/UbuntuBackup/Files/.AppImages
     rsync -avL --delete ~/.goldendict/dict/ /mnt/DATA2/UbuntuBackup/Files/dict
     rsync -avL --delete /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
 end
@@ -77,6 +81,6 @@ function update_fish -d "update fish settings"
     source ~/.config/fish/config.fish
 end
 function view_functions -d "list functions"
-     grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "==Funcsions=="} {print $2,$4,$5,$6} END {print "=====END====="}'
+    grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
 end
 status --is-login; and status --is-interactive; and exec byobu-launcher

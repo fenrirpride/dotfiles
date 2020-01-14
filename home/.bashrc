@@ -121,6 +121,6 @@ fi
 # to update
 alias update='sudo apt update && sudo apt -y upgrade && sudo apt -y full-upgrade && sudo apt -y autoclean && sudo apt -y autoremove'
 # output code extensions
-alias code_out='code --list-extensions > ~/dotfiles/vscode/extensions_list.txt'
+alias code_out='code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt'
 # install code extensions
-alias code_in='while read line; do code --install-extension $line; done < /mnt/DATA2/UbuntuBackup/Files/dotfiles/Code/extensions_list.txt'
+alias code_in='while read line; do code --install-extension $line; done < ~/MyCode/dotfiles/Code/extensions_list.txt'

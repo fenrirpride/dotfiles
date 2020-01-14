@@ -29,6 +29,7 @@ ryu1kn.partial-diff
 sgryjp.japanese-word-handler
 shardulm94.trailing-spaces
 shuworks.vscode-table-formatter
+skyapps.fish-vscode
 streetsidesoftware.code-spell-checker
 vscode-icons-team.vscode-icons
 vscoss.vscode-ansible
