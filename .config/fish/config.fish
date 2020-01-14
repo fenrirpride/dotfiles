@@ -25,8 +25,11 @@ end
 function code_out -d "make list vscode extensions"
     code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt
 end
+
 function code_in -d "install vscode extensions"
-    sh ~/MyCode/dotfiles/.config/fish/code_in.sh
+    while read line
+    code --install-extension $line
+    end < ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
 function view_ex -d "view list vscode extensions"
