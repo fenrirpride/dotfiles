@@ -370,3 +370,35 @@ AttributeError: ConfigManager instance has no attribute 'workAroundApps'
 2020-01-17 20:28:03,305 INFO - interface - XRecord interface thread starting
 2020-01-17 20:28:03,309 INFO - service - Service now marked as running
 2020-01-17 20:28:03,672 INFO - root - Entering main()
+2020-01-17 21:56:44,669 INFO - root - Displaying configuration window
+2020-01-17 21:56:48,440 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-17 21:56:48,440 INFO - config-manager - Persisting configuration
+2020-01-17 21:56:48,441 INFO - config-manager - Backing up existing config file
+2020-01-17 21:56:48,442 INFO - config-manager - Finished persisting configuration - no errors
+2020-01-18 12:20:05,711 INFO - root - Initialising application
+2020-01-18 12:20:05,738 INFO - root - Initialise global hotkeys
+2020-01-18 12:20:05,739 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-18 12:20:05,748 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-18 12:20:05,749 INFO - config-manager - Successfully loaded configuration
+2020-01-18 12:20:05,751 INFO - service - Starting service
+2020-01-18 12:20:06,055 INFO - interface - XRecord interface thread starting
+2020-01-18 12:20:06,066 INFO - service - Service now marked as running
+2020-01-18 12:20:06,680 INFO - root - Entering main()
+2020-01-18 12:32:09,375 INFO - root - Initialising application
+2020-01-18 12:32:09,393 INFO - root - Initialise global hotkeys
+2020-01-18 12:32:09,393 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-18 12:32:09,394 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-18 12:32:09,395 INFO - config-manager - Successfully loaded configuration
+2020-01-18 12:32:09,395 INFO - service - Starting service
+2020-01-18 12:32:09,697 INFO - interface - XRecord interface thread starting
+2020-01-18 12:32:09,709 INFO - service - Service now marked as running
+2020-01-18 12:32:10,148 INFO - root - Entering main()
+2020-01-18 22:58:19,032 INFO - root - Initialising application
+2020-01-18 22:58:19,066 INFO - root - Initialise global hotkeys
+2020-01-18 22:58:19,066 INFO - config-manager - Loading config from existing file: /home/yukio/.config/autokey/autokey.json
+2020-01-18 22:58:19,067 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2020-01-18 22:58:19,068 INFO - config-manager - Successfully loaded configuration
+2020-01-18 22:58:19,068 INFO - service - Starting service
+2020-01-18 22:58:19,368 INFO - interface - XRecord interface thread starting
+2020-01-18 22:58:19,388 INFO - service - Service now marked as running
+2020-01-18 22:58:20,090 INFO - root - Entering main()

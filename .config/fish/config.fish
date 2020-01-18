@@ -1,8 +1,10 @@
 # path for linuxbrew
 set -g fish_user_paths "/home/linuxbrew/.linuxbrew/bin" $fish_user_paths
+
 # ghq
 set GHQ_SELECTOR peco
 set -U FZF_LEGACY_KEYBINDINGS 0
+
 # set PATH
 set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
 set -x PATH ~/go/bin $PATH
@@ -34,6 +36,14 @@ end
 
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
+end
+
+# pycharm
+function py_out -d "make list of pycharm plugins"
+    cd ~/.PyCharm*/config/plugins
+    ls -d -1 */ | sed -e 's/\///g' > ~/MyCode/dotfiles/pycharm/extensions_list.txt
+    ls -1 | grep jar | sed -e 's/.jar//g' >> ~/MyCode/dotfiles/pycharm/extensions_list.txt
+    cd
 end
 
 # narou

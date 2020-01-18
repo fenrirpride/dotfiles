@@ -8,15 +8,15 @@ DOTFILES=~/MyCode/dotfiles
 MYREPOSITORY=~/git/github.com/fenrirpride
 
 # dein
-ln -sf $DOTFILES/dein/dein.toml ~/.vim/dein
-ln -sf $DOTFILES/dein/dein-lazy.toml ~/.vim/dein
+ln -sfv $DOTFILES/dein/dein.toml ~/.vim/dein
+ln -sfv $DOTFILES/dein/dein-lazy.toml ~/.vim/dein
 
 # Code
-ln -sf $DOTFILES/Code/settings.json ~/.config/Code/User
-ln -sf $DOTFILES/Code/keybindings.json ~/.config/Code/User
+ln -sfv $DOTFILES/Code/settings.json ~/.config/Code/User
+ln -sfv $DOTFILES/Code/keybindings.json ~/.config/Code/User
 
 # install dotfiles
-sudo ln -sf $DOTFILES/xkeysnail /etc/opt/xkeysnail
+sudo ln -sfv $DOTFILES/xkeysnail /etc/opt/xkeysnail
 
 # make symbolic link at home
 cd $DOTFILES/home

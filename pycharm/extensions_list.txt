@@ -1,0 +1,23 @@
+AceJump
+Atom File Icons IDEA
+BashSupport
+CSV Plugin
+DBNavigator
+GitToolBox
+IdeaVim
+Key-Promoter-X
+Material Theme
+StringManipulation
+Synonyms
+TranslationPlugin
+idea-gitignore
+idea-mindmap
+idea-multimarkdown
+intellij-rainbow-brackets
+kite-pycharm
+plantuml4idea
+StickySelection
+autoscroll-plugin
+intellij-auto-align
+intellij-plugin-save-actions-1.9.0+2019.3
+regexTester
