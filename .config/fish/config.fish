@@ -21,6 +21,7 @@ function update -d "update all packages"
     sudo snap refresh
     brew update
     brew upgrade
+    brew cleanup
 end
 
 # vscode
