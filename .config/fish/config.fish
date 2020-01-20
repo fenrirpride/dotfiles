@@ -21,6 +21,7 @@ function update -d "update all packages"
     sudo snap refresh
     brew update
     brew upgrade
+    brew cleanup
 end
 
 # vscode
@@ -62,9 +63,9 @@ end
 function epub -d "epub upload dropbox"
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
-    cp -u "$line" ~/pCloudDrive/epub
     end
-    if string length -q -- $line
+rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
+    if  test $status -eq 0
         echo -e "\e[32m"Update completed!"\e[m"
     else
         echo -e "\e[32m"No updates!"\e[m"
@@ -84,7 +85,7 @@ function backup -d "backup"
     rsync -avhL --delete --modify-window=1 /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
 end
 
-function data_backup -d "dataa backup"
+function data_backup -d "data backup"
     rsync -avL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
     rsync -avL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
     rsync -avL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
