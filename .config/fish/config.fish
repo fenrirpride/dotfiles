@@ -84,7 +84,7 @@ function backup -d "backup"
     rsync -avhL --delete --modify-window=1 /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
 end
 
-function data_backup -d "data backup"
+function data_backup -d "dataa backup"
     rsync -avL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
     rsync -avL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
     rsync -avL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
