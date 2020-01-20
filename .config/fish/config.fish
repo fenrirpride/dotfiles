@@ -73,28 +73,28 @@ end
 
 # backup
 function backup -d "backup"
-    rsync -avL --delete ~/MyCode/ansible/ /mnt/DATA2/UbuntuBackup/ansible
-    rsync -avL --delete ~/MyCode/dotfiles/ /mnt/DATA2/UbuntuBackup/Files/dotfiles
-    rsync -avL --delete ~/.PyCharmCE2019.3/ /mnt/DATA2/UbuntuBackup/Files/.PyCharmCE2019.3
-    rsync -avL --delete ~/.themes/ /mnt/DATA2/UbuntuBackup/Files/.themes
-    rsync -avL --delete ~/.ssh/ /mnt/DATA2/UbuntuBackup/Files/.ssh
-    rsync -avL --delete ~/MyCode/wordpress/ /mnt/DATA2/UbuntuBackup/wordpress
-    rsync -avL --delete ~/.AppImages/ /mnt/DATA2/UbuntuBackup/Files/.AppImages
-    rsync -avL --delete ~/.goldendict/dict/ /mnt/DATA2/UbuntuBackup/Files/dict
-    rsync -avL --delete /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    rsync -avhL --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible
+    rsync -avhL --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhL --delete --modify-window=1 ~/.PyCharmCE2019.3/ /mnt/UbuntuData/UbuntuBackup/Files/.PyCharmCE2019.3
+    rsync -avhL --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
+    rsync -avhL --delete --modify-window=1 ~/.ssh/ /mnt/UbuntuData/UbuntuBackup/Files/.ssh
+    rsync -avhL --delete --modify-window=1 ~/MyCode/wordpress/ /mnt/UbuntuData/UbuntuBackup/wordpress
+    rsync -avhL --delete --modify-window=1 ~/.AppImages/ /mnt/UbuntuData/UbuntuBackup/Files/.AppImages
+    rsync -avhL --delete --modify-window=1 ~/.goldendict/dict/ /mnt/UbuntuData/UbuntuBackup/Files/dict
+    rsync -avhL --delete --modify-window=1 /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
 end
 
 function data_backup -d "data backup"
-    rsync -avL --delete /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
-    rsync -avL --delete /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
-    rsync -avL --delete /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
-    rsync -avL --delete /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
-    rsync -avL --delete /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
-    rsync -avL --delete /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
-    rsync -avL --delete /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
-    rsync -avL --delete /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
-    rsync -avL --delete /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
-    rsync -avL --delete /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
+    rsync -avL --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
 end
 
 # fish
