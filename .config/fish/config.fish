@@ -64,9 +64,6 @@ end
 function epub -d "epub upload dropbox"
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
-        if test $status -eq 0
-            cp -u "$line" /mnt/DATA1/online/Dropbox/epub/update
-        end
     end
     rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
     if  test $status -eq 0
