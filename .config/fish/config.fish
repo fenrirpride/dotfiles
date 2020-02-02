@@ -52,6 +52,7 @@ function narouu -d "narou update"
     cd /mnt/DATA1/Novel
     narou u
     cd
+    epub
 end
 
 function naroud -d "narou download"
@@ -63,8 +64,11 @@ end
 function epub -d "epub upload dropbox"
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
+        if test $status -eq 0
+            cp -u "$line" /mnt/DATA1/online/Dropbox/epub/update
+        end
     end
-rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
+    rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
     if  test $status -eq 0
         echo -e "\e[32m"Update completed!"\e[m"
     else
@@ -74,28 +78,97 @@ end
 
 # backup
 function backup -d "backup"
+    echo -e "\e[32m"ansible"\e[m"
     rsync -avhL --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible
+    echo -e "\n\e[32m"dotfiles"\e[m"
     rsync -avhL --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    echo -e "\n\e[32m"pycharm"\e[m"
     rsync -avhL --delete --modify-window=1 ~/.PyCharmCE2019.3/ /mnt/UbuntuData/UbuntuBackup/Files/.PyCharmCE2019.3
+    echo -e "\n\e[32m"themes"\e[m"
     rsync -avhL --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
+    echo -e "\n\e[32m"ssh"\e[m"
     rsync -avhL --delete --modify-window=1 ~/.ssh/ /mnt/UbuntuData/UbuntuBackup/Files/.ssh
+    echo -e "\n\e[32m"wordpress"\e[m"
     rsync -avhL --delete --modify-window=1 ~/MyCode/wordpress/ /mnt/UbuntuData/UbuntuBackup/wordpress
+    echo -e "\n\e[32m"AppImages"\e[m"
     rsync -avhL --delete --modify-window=1 ~/.AppImages/ /mnt/UbuntuData/UbuntuBackup/Files/.AppImages
+    echo -e "\n\e[32m"dict"\e[m"
     rsync -avhL --delete --modify-window=1 ~/.goldendict/dict/ /mnt/UbuntuData/UbuntuBackup/Files/dict
-    rsync -avhL --delete --modify-window=1 /mnt/DATA2/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    echo -e "\n\e[32m"deb"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/UbuntuData/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    echo -e "\e[32m"backup completed!"\e[m"
 end
 
+function backup_test -d "backup dry run"
+    echo -e "\e[32m"ansible"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible
+    echo -e "\n\e[32m"dotfiles"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    echo -e "\n\e[32m"pycharm"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/.PyCharmCE2019.3/ /mnt/UbuntuData/UbuntuBackup/Files/.PyCharmCE2019.3
+    echo -e "\n\e[32m"themes"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
+    echo -e "\n\e[32m"ssh"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/.ssh/ /mnt/UbuntuData/UbuntuBackup/Files/.ssh
+    echo -e "\n\e[32m"wordpress"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/MyCode/wordpress/ /mnt/UbuntuData/UbuntuBackup/wordpress
+    echo -e "\n\e[32m"AppImages"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/.AppImages/ /mnt/UbuntuData/UbuntuBackup/Files/.AppImages
+    echo -e "\n\e[32m"dict"\e[m"
+    rsync -avhLn --delete --modify-window=1 ~/.goldendict/dict/ /mnt/UbuntuData/UbuntuBackup/Files/dict
+    echo -e "\n\e[32m"deb"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/UbuntuData/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    echo -e "\e[32m"backup completed!"\e[m"
+end
+
+
+
 function data_backup -d "data backup"
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
-    rsync -avL --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+    echo -e "\n\e[32m"itunes"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
+    echo -e "\n\e[32m"画像"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
+    echo -e "\n\e[32m"画像2"\e[m"
+    # rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
+    echo -e "\n\e[32m"book"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
+    echo -e "\n\e[32m"data"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
+    echo -e "\n\e[32m"manga"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
+    echo -e "\n\e[32m"Novel"\e[m"
+    rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
+    echo -e "\n\e[32m"ROM"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
+    echo -e "\n\e[32m"USB"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
+    echo -e "\n\e[32m"VIDEO"\e[m"
+    rsync -avhL --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+    echo -e "\e[32m"backup completed!"\e[m"
+end
+
+function data_backup_test -d "data backup dry run"
+    echo -e "\n\e[32m"itunes"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
+    echo -e "\n\e[32m"画像"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
+    echo -e "\n\e[32m"画像2"\e[m"
+    # rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
+    echo -e "\n\e[32m"book"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
+    echo -e "\n\e[32m"data"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
+    echo -e "\n\e[32m"manga"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
+    echo -e "\n\e[32m"Novel"\e[m"
+    rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
+    echo -e "\n\e[32m"ROM"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
+    echo -e "\n\e[32m"USB"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
+    echo -e "\n\e[32m"VIDEO"\e[m"
+    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+    echo -e "\e[32m"backup completed!"\e[m"
 end
 
 # fish
