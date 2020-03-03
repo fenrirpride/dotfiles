@@ -22,6 +22,7 @@ function update -d "update all packages"
     brew update
     brew upgrade
     brew cleanup
+    sudo gem update
 end
 
 # vscode
