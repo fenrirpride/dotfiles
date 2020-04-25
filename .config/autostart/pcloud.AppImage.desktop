@@ -6,3 +6,4 @@ Comment=pcloud.AppImagestartup script
 Exec=/home/yukio/.AppImages/pcloud.AppImage
 StartupNotify=false
 Terminal=false
+X-GNOME-Autostart-enabled=false

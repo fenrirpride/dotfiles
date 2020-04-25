@@ -4,7 +4,7 @@
 set -e
 
 # set PATH
-DOTFILES=~/MyCode/dotfiles
+DOTFILES=~/git/github.com/fenrirpride/dotfiles
 MYREPOSITORY=~/git/github.com/fenrirpride
 
 # dein
@@ -17,6 +17,10 @@ ln -sfv $DOTFILES/Code/keybindings.json ~/.config/Code/User
 
 # install dotfiles
 sudo ln -sfv $DOTFILES/xkeysnail /etc/opt/xkeysnail
+
+# remove directory
+rm -rf ~/.config/autostart
+rm -rf ~/.config/fish
 
 # make symbolic link at home
 cd $DOTFILES/home
@@ -43,4 +47,4 @@ do
     # echo $f
 done
 
-ln -sfv "$HOME/pCloudDrive/wordpress" "$HOME/MyCode"
+#ln -sfv "$HOME/pCloudDrive/wordpress" "$HOME/MyCode"
