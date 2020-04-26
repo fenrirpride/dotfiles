@@ -16,7 +16,9 @@ ln -sfv $DOTFILES/Code/settings.json ~/.config/Code/User
 ln -sfv $DOTFILES/Code/keybindings.json ~/.config/Code/User
 
 # install dotfiles
-sudo ln -sfv $DOTFILES/xkeysnail /etc/opt/xkeysnail
+mkdir -p ~/.config/xkeysnail
+sudo ln -sfv $DOTFILES/xkeysnail/xkeysnail.service ~/.config/systemd/user
+sudo ln -sfv $DOTFILES/xkeysnail/config.py ~/.config/xkeysnail
 
 # remove directory
 rm -rf ~/.config/autostart
