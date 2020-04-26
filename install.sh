@@ -17,8 +17,10 @@ ln -sfv $DOTFILES/Code/keybindings.json ~/.config/Code/User
 
 # install dotfiles
 mkdir -p ~/.config/xkeysnail
-sudo ln -sfv $DOTFILES/xkeysnail/xkeysnail.service ~/.config/systemd/user
-sudo ln -sfv $DOTFILES/xkeysnail/config.py ~/.config/xkeysnail
+ln -sfv $DOTFILES/xkeysnail/xkeysnail.service ~/.config/systemd/user
+ln -sfv $DOTFILES/xkeysnail/config.py ~/.config/xkeysnail
+systemctl --user enable xkeysnail
+systemctl --user start xkeysnail.service
 
 # remove directory
 rm -rf ~/.config/autostart
@@ -37,16 +39,10 @@ cd $DOTFILES/.config
 for f in *
 do
     [ "$f" = ".git" ] && continue
+    [ "$f" = "list" ] && continue
     ln -sfv "$DOTFILES/.config/$f" "$HOME/.config"
     # echo $f
 done
 
 # make symbolic link at MyCode
-cd $MYREPOSITORY
-for f in *
-do
-    ln -sfv "$MYREPOSITORY/$f" "$HOME/MyCode"
-    # echo $f
-done
-
-#ln -sfv "$HOME/pCloudDrive/wordpress" "$HOME/MyCode"
+ln -sfv "$MYREPOSITORY" "$HOME/MyCode"

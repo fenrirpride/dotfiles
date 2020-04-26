@@ -1,10 +1,10 @@
-# $Id: autokey-gtk.desktop 22 2008-01-29 11:29:13Z peabody $
 [Desktop Entry]
-Name=AutoKey
-GenericName=Keyboard Automation
-Comment=Program keyboard shortcuts
-Exec=autokey-gtk
-Terminal=false
 Type=Application
-Icon=autokey
-Categories=GNOME;GTK;Utility;
+Exec=autokey
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[ja_JP]=autokey
+Name=autokey
+Comment[ja_JP]=
+Comment=

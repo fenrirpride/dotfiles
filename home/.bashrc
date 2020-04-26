@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# My Settings
+export PATH=/home/yukio/.local/bin:$PATH
 
 # original scripts
 # to update

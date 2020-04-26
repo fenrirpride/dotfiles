@@ -110,5 +110,8 @@
 	"cSpell.userWords": [],
 	"explorer.confirmDragAndDrop": false,
 	"window.zoomLevel": 0,
-	"kite.showWelcomeNotificationOnStartup": false
+	"kite.showWelcomeNotificationOnStartup": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }

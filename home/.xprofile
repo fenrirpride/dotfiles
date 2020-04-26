@@ -1,7 +1,7 @@
-export XDG_CACHE_HOME=/dev/shm/.cache-$(whoami)
-mkdir -p ${XDG_CACHE_HOME}
-chmod 700 ${XDG_CACHE_HOME}
-mkdir -p /mnt/RAMDISK/.cache
+#export XDG_CACHE_HOME=/dev/shm/.cache-$(whoami)
+#mkdir -p ${XDG_CACHE_HOME}
+#chmod 700 ${XDG_CACHE_HOME}
+#mkdir -p /mnt/RAMDISK/.cache
 #ln -sf /mnt/RAMDISK/.cache "${HOME}"
 #export XDG_DATA_HOME="${HOME}/.local/share"
 #export XDG_CONFIG_HOME="${HOME}/.config"

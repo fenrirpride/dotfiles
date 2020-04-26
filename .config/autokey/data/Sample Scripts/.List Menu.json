@@ -1,10 +1,11 @@
 {
-    "type": "folder",
-    "title": "My Phrases",
-    "modes": [
-        3
-    ],
+    "type": "script",
+    "description": "List Menu",
+    "store": {},
+    "modes": [],
     "usageCount": 0,
+    "prompt": false,
+    "omitTrigger": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -15,10 +16,8 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<ctrl>"
-        ],
-        "hotKey": "<f7>"
+        "modifiers": [],
+        "hotKey": null
     },
     "filter": {
         "regex": null,

@@ -1,45 +1,47 @@
 {
-    "folders": [], 
-    "toggleServiceHotkey": {
-        "hotKey": "k", 
-        "modifiers": [
-            "<shift>", 
-            "<super>"
-        ], 
-        "enabled": true
-    }, 
+    "version": "0.95.10",
+    "userCodeDir": null,
     "settings": {
-        "showTrayIcon": true, 
-        "sortByUsageCount": true, 
-        "scriptGlobals": {}, 
-        "undoUsingBackspace": true, 
-        "notificationIcon": "autokey-status", 
-        "enableQT4Workaround": false, 
-        "promptToSave": false, 
-        "menuTakesFocus": false, 
-        "interfaceType": "XRecord", 
+        "isFirstRun": true,
+        "serviceRunning": true,
+        "menuTakesFocus": false,
+        "showTrayIcon": true,
+        "sortByUsageCount": true,
+        "promptToSave": false,
+        "enableQT4Workaround": false,
+        "interfaceType": "XRecord",
+        "undoUsingBackspace": true,
         "windowDefaultSize": [
-            992, 
-            718
-        ], 
-        "showToolbar": true, 
-        "serviceRunning": true, 
+            600,
+            400
+        ],
+        "hPanePosition": 150,
         "columnWidths": [
-            150, 
-            50, 
+            150,
+            50,
             100
-        ], 
-        "workAroundApps": ".*VirtualBox.*|krdc.Krdc", 
-        "hPanePosition": 249, 
-        "isFirstRun": true
-    }, 
-    "userCodeDir": null, 
-    "version": "0.90.4", 
+        ],
+        "showToolbar": true,
+        "notificationIcon": "autokey-status",
+        "workAroundApps": ".*VirtualBox.*|krdc.Krdc",
+        "triggerItemByInitial": false,
+        "disabledModifiers": [],
+        "scriptGlobals": {}
+    },
+    "folders": [],
+    "toggleServiceHotkey": {
+        "enabled": true,
+        "modifiers": [
+            "<shift>",
+            "<super>"
+        ],
+        "hotKey": "k"
+    },
     "configHotkey": {
-        "hotKey": "k", 
+        "enabled": true,
         "modifiers": [
             "<super>"
-        ], 
-        "enabled": true
+        ],
+        "hotKey": "k"
     }
 }

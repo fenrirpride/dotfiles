@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=pcloud.AppImage
-Comment=pcloud.AppImagestartup script
-Exec=/home/yukio/.AppImages/pcloud.AppImage
-StartupNotify=false
-Terminal=false
-X-GNOME-Autostart-enabled=false
