@@ -118,6 +118,7 @@ fi
 
 # My Settings
 export PATH=/home/yukio/.local/bin:$PATH
+export PATH="$PATH:/home/yukio/.local/bin"
 
 # original scripts
 # to update

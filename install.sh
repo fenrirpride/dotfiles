@@ -46,3 +46,6 @@ done
 
 # make symbolic link at MyCode
 ln -sfv "$MYREPOSITORY" "$HOME/MyCode"
+
+# for Jellyfin
+#ln -sfv /mnt/DATA2/ANIME ~/docker/Jellyfin/media/
