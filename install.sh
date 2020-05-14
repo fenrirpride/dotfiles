@@ -7,16 +7,14 @@ set -e
 DOTFILES=~/git/github.com/fenrirpride/dotfiles
 MYREPOSITORY=~/git/github.com/fenrirpride
 
-# dein
-ln -sfv $DOTFILES/dein/dein.toml ~/.vim/dein
-ln -sfv $DOTFILES/dein/dein-lazy.toml ~/.vim/dein
-
 # Code
+mkdir -p ~/.config/Code/User
 ln -sfv $DOTFILES/Code/settings.json ~/.config/Code/User
 ln -sfv $DOTFILES/Code/keybindings.json ~/.config/Code/User
 
 # install dotfiles
 mkdir -p ~/.config/xkeysnail
+mkdir -p ~/.config/systemd/user
 ln -sfv $DOTFILES/xkeysnail/xkeysnail.service ~/.config/systemd/user
 ln -sfv $DOTFILES/xkeysnail/config.py ~/.config/xkeysnail
 systemctl --user enable xkeysnail
