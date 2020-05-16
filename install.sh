@@ -28,8 +28,9 @@ rm -rf ~/.config/fish
 cd $DOTFILES/home
 for f in .??*
 do
+    echo "$HOME/$f"
+    read -p "press to enter"
     ln -sfv "$DOTFILES/home/$f" "$HOME"
-    # echo $f
 done
 
 # make symbolic link at .config
@@ -38,12 +39,15 @@ for f in *
 do
     [ "$f" = ".git" ] && continue
     [ "$f" = "list" ] && continue
+    [ "$f" = "autostart" ] && continue
+    echo "$HOME/.config/$f"
+    read -p "press to enter"
     ln -sfv "$DOTFILES/.config/$f" "$HOME/.config"
-    # echo $f
 done
 
 # make symbolic link at MyCode
 ln -sfv "$MYREPOSITORY" "$HOME/MyCode"
+ln -sfv "/mnt/UbuntuData/UbuntuBackup/ansible_20" "$HOME/MyCode/ansible"
 
 # for Jellyfin
 #ln -sfv /mnt/DATA2/ANIME ~/docker/Jellyfin/media/
