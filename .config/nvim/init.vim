@@ -1,3 +1,4 @@
+" settings for dein.vim
 if &compatible
   set nocompatible
 endif
@@ -39,3 +40,25 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
+
+
+" Settings for neovim
+" encode setting
+set encoding=utf-8
+" editer setting
+set number
+set wildmenu
+" cursol setting
+set ruler
+set cursorline
+" tab setting
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set autoindent
+" clipboard setting
+set clipboard=unnamed
+" search setting
+set hls
+" syntax setting
+syntax enable
