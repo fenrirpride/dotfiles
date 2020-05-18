@@ -47,7 +47,7 @@ done
 
 # make symbolic link at MyCode
 ln -sfv "$MYREPOSITORY" "$HOME/MyCode"
-ln -sfv "/mnt/UbuntuData/UbuntuBackup/ansible_20" "$HOME/MyCode/ansible"
+# ln -sfv "/mnt/UbuntuData/UbuntuBackup/ansible_20" "$HOME/MyCode/ansible"
 
 # for Jellyfin
 #ln -sfv /mnt/DATA2/ANIME ~/docker/Jellyfin/media/

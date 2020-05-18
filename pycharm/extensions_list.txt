@@ -8,16 +8,16 @@ IdeaVim
 Key-Promoter-X
 Material Theme
 StringManipulation
-Synonyms
 TranslationPlugin
 idea-gitignore
 idea-mindmap
-idea-multimarkdown
+indent-rainbow
 intellij-rainbow-brackets
+intellij-synonyms
 kite-pycharm
 plantuml4idea
 StickySelection
 autoscroll-plugin
-intellij-auto-align
-intellij-plugin-save-actions-1.9.0+2019.3
+intellij-plugin-save-actions-2.0.0
+ja.201.6
 regexTester

@@ -22,7 +22,6 @@ function update -d "update all packages"
     brew update
     brew upgrade
     brew cleanup
-    sudo gem update
 end
 
 # vscode
@@ -40,39 +39,40 @@ function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
+/home/yukio/.local/share/JetBrains/PyCharmCE2020.1
 # pycharm
 function py_out -d "make list of pycharm plugins"
-    cd ~/.PyCharm*/config/plugins
+    cd ~/.local/share/JetBrains/PyCharm*
     ls -d -1 */ | sed -e 's/\///g' > ~/MyCode/dotfiles/pycharm/extensions_list.txt
     ls -1 | grep jar | sed -e 's/.jar//g' >> ~/MyCode/dotfiles/pycharm/extensions_list.txt
     cd
 end
 
 # narou
-function narouu -d "narou update"
-    cd /mnt/DATA1/Novel
-    narou u
-    cd
-    epub
-end
+# function narouu -d "narou update"
+#     cd /mnt/DATA1/Novel
+#     narou u
+#     cd
+#     epub
+# end
 
-function naroud -d "narou download"
-    cd /mnt/DATA1/Novel
-    narou d $argv
-    cd
-end
+# function naroud -d "narou download"
+#     cd /mnt/DATA1/Novel
+#     narou d $argv
+#     cd
+# end
 
-function epub -d "epub upload dropbox"
-    find /mnt/DATA1/Novel/ -name \*.epub | while read line
-    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
-    end
-    rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
-    if  test $status -eq 0
-        echo -e "\e[32m"Update completed!"\e[m"
-    else
-        echo -e "\e[32m"No updates!"\e[m"
-    end
-end
+# function epub -d "epub upload dropbox"
+#     find /mnt/DATA1/Novel/ -name \*.epub | while read line
+#     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
+#     end
+#     rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
+#     if  test $status -eq 0
+#         echo -e "\e[32m"Update completed!"\e[m"
+#     else
+#         echo -e "\e[32m"No updates!"\e[m"
+#     end
+# end
 
 # backup
 function backup -d "backup"
@@ -179,7 +179,7 @@ function update_fish -d "update fish settings"
 end
 
 function edit_fish -d "edit fish settings"
-    vim ~/.config/fish/config.fish
+    nvim ~/.config/fish/config.fish
     update_fish
 end
 
