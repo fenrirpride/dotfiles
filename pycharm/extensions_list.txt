@@ -15,6 +15,7 @@ indent-rainbow
 intellij-rainbow-brackets
 intellij-synonyms
 kite-pycharm
+meta
 plantuml4idea
 StickySelection
 autoscroll-plugin

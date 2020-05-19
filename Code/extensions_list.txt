@@ -10,9 +10,11 @@ formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 formulahendry.vscode-mysql
 hediet.vscode-drawio
+HookyQR.beautify
 IBM.output-colorizer
 jebbs.plantuml
 kiteco.kite
+mhutchie.git-graph
 mosapride.zenkaku
 mrmlnc.vscode-autoprefixer
 mrmlnc.vscode-csscomb

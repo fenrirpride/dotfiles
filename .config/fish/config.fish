@@ -39,13 +39,10 @@ function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
-/home/yukio/.local/share/JetBrains/PyCharmCE2020.1
 # pycharm
 function py_out -d "make list of pycharm plugins"
-    cd ~/.local/share/JetBrains/PyCharm*
-    ls -d -1 */ | sed -e 's/\///g' > ~/MyCode/dotfiles/pycharm/extensions_list.txt
-    ls -1 | grep jar | sed -e 's/.jar//g' >> ~/MyCode/dotfiles/pycharm/extensions_list.txt
-    cd
+    ls -d -1 ~/.local/share/JetBrains/PyCharm*/*/ | awk '{ print $8 }' FS='/' > ~/MyCode/dotfiles/pycharm/extensions_list.txt
+    ls -1 ~/.local/share/JetBrains/PyCharm*/ | grep jar | sed -e 's/.jar//g' >> ~/MyCode/dotfiles/pycharm/extensions_list.txt
 end
 
 # narou
@@ -77,95 +74,57 @@ end
 # backup
 function backup -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible
+    rsync -avhln --delete --modify-window=1 "~/MyCode/ansible/" "/mnt/UbuntuData/UbuntuBackup/ansible_20"
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhln --delete --modify-window=1 "~/MyCode/dotfiles/" "/mnt/UbuntuData/UbuntuBackup/Files/dotfiles"
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/.PyCharmCE2019.3/ /mnt/UbuntuData/UbuntuBackup/Files/.PyCharmCE2019.3
+    rsync -avhln --delete --modify-window=1 "~/.local/share/JetBrains/PyCharm*/" "/mnt/UbuntuData/UbuntuBackup/Files/PyCharm"
     echo -e "\n\e[32m"themes"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
+    rsync -avhln --delete --modify-window=1 "~/.themes/" "/mnt/UbuntuData/UbuntuBackup/Files/.themes"
     echo -e "\n\e[32m"ssh"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/.ssh/ /mnt/UbuntuData/UbuntuBackup/Files/.ssh
-    echo -e "\n\e[32m"wordpress"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/MyCode/wordpress/ /mnt/UbuntuData/UbuntuBackup/wordpress
-    echo -e "\n\e[32m"AppImages"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/.AppImages/ /mnt/UbuntuData/UbuntuBackup/Files/.AppImages
-    echo -e "\n\e[32m"dict"\e[m"
-    rsync -avhL --delete --modify-window=1 ~/.goldendict/dict/ /mnt/UbuntuData/UbuntuBackup/Files/dict
-    echo -e "\n\e[32m"deb"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/UbuntuData/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    rsync -avhln --delete --modify-window=1 "~/.ssh/" "/mnt/UbuntuData/UbuntuBackup/Files/.ssh"
     echo -e "\e[32m"backup completed!"\e[m"
 end
 
-function backup_test -d "backup dry run"
+function backup -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible
+    rsync -avhln --delete --modify-window=1 "~/MyCode/ansible/" "/mnt/UbuntuData/UbuntuBackup/ansible_20"
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhln --delete --modify-window=1 "~/MyCode/dotfiles/" "/mnt/UbuntuData/UbuntuBackup/Files/dotfiles"
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/.PyCharmCE2019.3/ /mnt/UbuntuData/UbuntuBackup/Files/.PyCharmCE2019.3
+    rsync -avhln --delete --modify-window=1 "~/.local/share/JetBrains/PyCharm*/" "/mnt/UbuntuData/UbuntuBackup/Files/PyCharm"
     echo -e "\n\e[32m"themes"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
+    rsync -avhln --delete --modify-window=1 "~/.themes/" "/mnt/UbuntuData/UbuntuBackup/Files/.themes"
     echo -e "\n\e[32m"ssh"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/.ssh/ /mnt/UbuntuData/UbuntuBackup/Files/.ssh
-    echo -e "\n\e[32m"wordpress"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/MyCode/wordpress/ /mnt/UbuntuData/UbuntuBackup/wordpress
-    echo -e "\n\e[32m"AppImages"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/.AppImages/ /mnt/UbuntuData/UbuntuBackup/Files/.AppImages
-    echo -e "\n\e[32m"dict"\e[m"
-    rsync -avhLn --delete --modify-window=1 ~/.goldendict/dict/ /mnt/UbuntuData/UbuntuBackup/Files/dict
-    echo -e "\n\e[32m"deb"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/UbuntuData/UbuntuBackup/Files/deb/ ~/pCloudDrive/UbuntuBackup/deb
+    rsync -avhln --delete --modify-window=1 "~/.ssh/" "/mnt/UbuntuData/UbuntuBackup/Files/.ssh"
     echo -e "\e[32m"backup completed!"\e[m"
 end
-
-
 
 function data_backup -d "data backup"
-    echo -e "\n\e[32m"itunes"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
-    echo -e "\n\e[32m"画像"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
-    echo -e "\n\e[32m"画像2"\e[m"
-    # rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
-    echo -e "\n\e[32m"book"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
-    echo -e "\n\e[32m"data"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
-    echo -e "\n\e[32m"manga"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
-    echo -e "\n\e[32m"Novel"\e[m"
-    rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
-    echo -e "\n\e[32m"ROM"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
-    echo -e "\n\e[32m"USB"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
-    echo -e "\n\e[32m"VIDEO"\e[m"
-    rsync -avhL --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+    set target_list itunes 画像 画像2 CG manga book
+    for target in $target_list
+        echo -e "\n\e[32m"$target"\e[m"
+        sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/$target/" "/mnt/EXHDD1/DataBackup/$target"
+    end
+    set target_list data Novel ROM USB VIDEO
+    for target in $target_list
+        echo -e "\n\e[32m"$target"\e[m"
+        sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/$target/" "/mnt/EXHDD2/DataBackup/$target"
+    end
     echo -e "\e[32m"backup completed!"\e[m"
 end
 
-function data_backup_test -d "data backup dry run"
-    echo -e "\n\e[32m"itunes"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/itunes/ /mnt/EXHDD1/DataBackup/itunes
-    echo -e "\n\e[32m"画像"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/画像/ /mnt/EXHDD1/DataBackup/画像
-    echo -e "\n\e[32m"画像2"\e[m"
-    # rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/画像2/ /mnt/EXHDD1/DataBackup/画像2
-    echo -e "\n\e[32m"book"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/book/ /mnt/EXHDD2/DataBackup/book
-    echo -e "\n\e[32m"data"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/data/ /mnt/EXHDD2/DataBackup/data
-    echo -e "\n\e[32m"manga"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/manga/ /mnt/EXHDD2/DataBackup/manga
-    echo -e "\n\e[32m"Novel"\e[m"
-    rsync -rlvhL --delete --modify-window=1 /mnt/DATA1/Novel/ /mnt/EXHDD2/DataBackup/Novel
-    echo -e "\n\e[32m"ROM"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/ROM/ /mnt/EXHDD2/DataBackup/ROM
-    echo -e "\n\e[32m"USB"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/USB/ /mnt/EXHDD2/DataBackup/USB
-    echo -e "\n\e[32m"VIDEO"\e[m"
-    rsync -avhLn --delete --modify-window=1 /mnt/DATA1/VIDEO/ /mnt/EXHDD2/DataBackup/VIDEO
+function data_backup_test -d "data backup"
+    set target_list itunes 画像 画像2 CG manga book
+    for target in $target_list
+        echo -e "\n\e[32m"$target"\e[m"
+        sudo rsync -avhln --delete --modify-window=1 "/mnt/DATA1/$target/" "/mnt/EXHDD1/DataBackup/$target"
+    end
+    set target_list data Novel ROM USB VIDEO
+    for target in $target_list
+        echo -e "\n\e[32m"$target"\e[m"
+        sudo rsync -avhln --delete --modify-window=1 "/mnt/DATA1/$target/" "/mnt/EXHDD2/DataBackup/$target"
+    end
     echo -e "\e[32m"backup completed!"\e[m"
 end
 
@@ -186,6 +145,3 @@ end
 function view_functions -d "list functions"
     grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
 end
-
-# byobu settings
-status --is-login; and status --is-interactive; and exec byobu-launcher

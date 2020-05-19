@@ -22,7 +22,7 @@
 	// タブ補完を有効にする
 	"editor.tabCompletion": "on",
 	// 検索対象を選択範囲に限定する
-	"editor.find.autoFindInSelection": "always",
+	"editor.find.autoFindInSelection": "multiline",
 	// 合字を有効にする
 	"editor.fontLigatures": true,
 	// ミニマップを無効にする
