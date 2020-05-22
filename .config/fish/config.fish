@@ -1,5 +1,12 @@
 # path for linuxbrew
 set -g fish_user_paths "/home/linuxbrew/.linuxbrew/bin" $fish_user_paths
+# path for anyenv
+set -Ux fish_user_paths $HOME/.anyenv/bin $fish_user_paths
+# path for rbenv from anyenv
+set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
+set -x PATH $PATH "/home/yukio/.anyenv/envs/rbenv/bin"
+set -gx PATH '/home/yukio/.anyenv/envs/rbenv/shims' $PATH
+set -gx RBENV_SHELL fish
 
 # ghq
 set GHQ_SELECTOR peco
@@ -22,6 +29,7 @@ function update -d "update all packages"
     brew update
     brew upgrade
     brew cleanup
+    fish_update_completions
 end
 
 # vscode
@@ -46,30 +54,29 @@ function py_out -d "make list of pycharm plugins"
 end
 
 # narou
-# function narouu -d "narou update"
-#     cd /mnt/DATA1/Novel
-#     narou u
-#     cd
-#     epub
-# end
+function narouu -d "narou update"
+    cd /mnt/DATA1/Novel
+    bundle exec narou u
+    cd
+end
 
-# function naroud -d "narou download"
-#     cd /mnt/DATA1/Novel
-#     narou d $argv
-#     cd
-# end
+function naroud -d "narou download"
+    cd /mnt/DATA1/Novel
+    bundle exec narou d $argv
+    cd
+end
 
-# function epub -d "epub upload dropbox"
-#     find /mnt/DATA1/Novel/ -name \*.epub | while read line
-#     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
-#     end
-#     rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
-#     if  test $status -eq 0
-#         echo -e "\e[32m"Update completed!"\e[m"
-#     else
-#         echo -e "\e[32m"No updates!"\e[m"
-#     end
-# end
+function epub -d "epub upload dropbox"
+    find /mnt/DATA1/Novel/ -name \*.epub | while read line
+    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
+    end
+    # rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
+    # if  test $status -eq 0
+    #     echo -e "\e[32m"Update completed!"\e[m"
+    # else
+    #     echo -e "\e[32m"No updates!"\e[m"
+    # end
+end
 
 # backup
 function backup -d "backup"
