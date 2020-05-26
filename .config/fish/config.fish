@@ -73,6 +73,7 @@ function epub -d "epub upload dropbox"
     end
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
+    rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
     end < /mnt/RAMDISK/narou_update
 end
 
@@ -149,4 +150,24 @@ end
 
 function view_functions -d "list functions"
     grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
+end
+
+function zip_comic -d "make zip file at /manga folder"
+    cd /mnt/EXHDD1/DataBackup/manga/
+    set target_list (ls)
+    for directory in $target_list
+        if test -d $directory
+            pushd $directory
+            set comic_list (ls)
+            for comic in $comic_list
+                if test -d $comic
+                    tar -cvf $comic.zip --use-compress-prog=pigz $comic
+                    if test $status -eq 0
+                        rm -rf $comic
+                    end
+                end
+            end
+            popd
+        end
+    end
 end

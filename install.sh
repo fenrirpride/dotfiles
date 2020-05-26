@@ -47,7 +47,14 @@ done
 
 # make symbolic link at MyCode
 ln -sfv "$MYREPOSITORY" "$HOME/MyCode"
-# ln -sfv "/mnt/UbuntuData/UbuntuBackup/ansible_20" "$HOME/MyCode/ansible"
 
-# for Jellyfin
-#ln -sfv /mnt/DATA2/ANIME ~/docker/Jellyfin/media/
+# make symbolic link at /etc
+cd $DOTFILES/etc
+for f in *
+do
+    [ "$f" = "" ] && continue
+    echo "/etc/$f"
+    read -p "press to enter"
+    sudo rm -rf "/etc/$f"
+    sudo ln -sfv "$DOTFILES/etc/$f" "/etc/$f"
+done

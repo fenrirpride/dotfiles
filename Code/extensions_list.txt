@@ -12,6 +12,7 @@ formulahendry.vscode-mysql
 hediet.vscode-drawio
 HookyQR.beautify
 IBM.output-colorizer
+ICS.japanese-proofreading
 jebbs.plantuml
 kiteco.kite
 mhutchie.git-graph
@@ -19,6 +20,7 @@ mosapride.zenkaku
 mrmlnc.vscode-autoprefixer
 mrmlnc.vscode-csscomb
 mrmlnc.vscode-duplicate
+ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-mssql.mssql
 ms-python.python
