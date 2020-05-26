@@ -171,3 +171,11 @@ function zip_comic -d "make zip file at /manga folder"
         end
     end
 end
+
+function reject_space -d "remove space in directory name"
+    set target_list (find ./ -type d | grep '.*\]\ .*' | sed 's/\ //')
+    set name_list (find . -type d | grep '.*\]\ .*')
+    for i in (seq (count $name_list))
+        mv $name_list[$i] $target_list[$i]
+    end
+end
