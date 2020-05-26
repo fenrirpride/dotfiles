@@ -67,15 +67,13 @@ function naroud -d "narou download"
 end
 
 function epub -d "epub upload dropbox"
+    rm /mnt/RAMDISK/narou_update
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
-    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}'
+    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
     end
-    # rsync -avL --delete /mnt/DATA1/online/Dropbox/epub/ ~/pCloudDrive/epub | grep "epub" > /dev/null 2>&1
-    # if  test $status -eq 0
-    #     echo -e "\e[32m"Update completed!"\e[m"
-    # else
-    #     echo -e "\e[32m"No updates!"\e[m"
-    # end
+    while read line
+    cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
+    end < /mnt/RAMDISK/narou_update
 end
 
 # backup
