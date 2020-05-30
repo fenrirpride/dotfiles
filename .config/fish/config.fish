@@ -67,22 +67,24 @@ function naroud -d "narou download"
 end
 
 function epub -d "epub upload dropbox"
-    rm /mnt/RAMDISK/narou_update
+    if test -e /mnt/RAMDISK/narou_update
+        rm /mnt/RAMDISK/narou_update
+    end
     find /mnt/DATA1/Novel/ -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
     end
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
-    rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
     end < /mnt/RAMDISK/narou_update
+    rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
 end
 
 # backup
 function backup -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhl --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
+    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhl --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
     echo -e "\n\e[32m"pycharm"\e[m"
     rsync -avhl --delete --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
     echo -e "\n\e[32m"themes"\e[m"
