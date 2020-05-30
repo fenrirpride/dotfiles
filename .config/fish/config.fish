@@ -82,11 +82,11 @@ end
 # backup
 function backup -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhl --delete --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
     echo -e "\n\e[32m"themes"\e[m"
     rsync -avhl --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
     echo -e "\n\e[32m"ssh"\e[m"
