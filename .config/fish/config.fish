@@ -96,11 +96,11 @@ end
 
 function backup_test -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
     echo -e "\n\e[32m"themes"\e[m"
     rsync -avhln --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
     echo -e "\n\e[32m"ssh"\e[m"
@@ -136,6 +136,16 @@ function data_backup_test -d "data backup"
     echo -e "\e[32m"backup completed!"\e[m"
 end
 
+function windows_backup -d "windows backup"
+    echo -e "\n\e[32m"portable"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/Windows10/portable/" "/mnt/DATA2/WindowsBackup/portable"
+    echo -e "\n\e[32m"bat"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/bat/" "/mnt/DATA2/WindowsBackup/bat"
+    echo -e "\e[32m"backup completed!"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/setup/" "/mnt/DATA2/WindowsBackup/setup"
+    echo -e "\e[32m"backup completed!"\e[m"
+end
+
 # fish
 function view_fish -d "view fish settings"
     cat ~/.config/fish/config.fish
@@ -167,6 +177,24 @@ function zip_comic -d "make zip file at /manga folder"
                     if test $status -eq 0
                         rm -rf $comic
                     end
+                end
+            end
+            popd
+        end
+    end
+end
+
+function unzip_comic -d "make zip file at /manga folder"
+    cd /mnt/EXHDD1/DataBackup/manga/
+    set target_list (ls)
+    for directory in $target_list
+        if test -d $directory
+            pushd $directory
+            set comic_list (ls *.zip)
+            for comic in $comic_list
+                unzip $comic
+                if test $status -eq 0
+                    rm -rf $comic
                 end
             end
             popd
