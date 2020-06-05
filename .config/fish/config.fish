@@ -4,8 +4,8 @@ set -g fish_user_paths "/home/linuxbrew/.linuxbrew/bin" $fish_user_paths
 set -Ux fish_user_paths $HOME/.anyenv/bin $fish_user_paths
 # path for rbenv from anyenv
 set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
-set -x PATH $PATH "/home/yukio/.anyenv/envs/rbenv/bin"
-set -gx PATH '/home/yukio/.anyenv/envs/rbenv/shims' $PATH
+set -x PATH $PATH "/home/yukio/.anyenv/envs/rbenv/bin" $PATH
+set -gx PATH $PATH '/home/yukio/.anyenv/envs/rbenv/shims' $PATH
 set -gx RBENV_SHELL fish
 
 # ghq
@@ -76,7 +76,7 @@ function epub -d "epub upload dropbox"
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
     end < /mnt/RAMDISK/narou_update
-    rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
 end
 
 # backup
