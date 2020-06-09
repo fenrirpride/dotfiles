@@ -8,7 +8,8 @@ set -x PATH "$HOME/.anyenv/bin" $PATH
 set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
 set -x PATH "/home/yukio/.anyenv/envs/rbenv/bin" $PATH
 set -x PATH "/home/yukio/.anyenv/envs/rbenv/shims" $PATH
-#set -x PATH "/home/yukio/.anyenv/envs/rbenv/versions/2.6.6/bin" $PATH
+set -x PATH "$HOME/.anyenv/envs/rbenv/versions/2.6.6/bin" $PATH
+
 set -x RBENV_SHELL fish
 
 # for ghq
