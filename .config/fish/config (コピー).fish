@@ -1,25 +1,4 @@
-# PATH settings
-# for linuxbrew
-set -x PATH "/home/linuxbrew/.linuxbrew/bin" $PATH
-set -x PATH "/home/linuxbrew/.linuxbrew/sbin" $PATH
-# for anyenv
-set -x PATH "$HOME/.anyenv/bin" $PATH
-# path for rbenv from anyenv
-set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
-set -x PATH "/home/yukio/.anyenv/envs/rbenv/bin" $PATH
-set -x PATH "/home/yukio/.anyenv/envs/rbenv/shims" $PATH
-#set -x PATH "/home/yukio/.anyenv/envs/rbenv/versions/2.6.6/bin" $PATH
-set -x RBENV_SHELL fish
-
-# for ghq
-set GHQ_SELECTOR peco
-set -U FZF_LEGACY_KEYBINDINGS 0
-
-# for go
-set -x PATH ~/go/bin $PATH
-
 # functions
-
 # system
 function update -d "update all packages"
     sudo apt update
@@ -46,7 +25,6 @@ function code_in -d "install vscode extensions"
     end < ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
-# fish
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
 end

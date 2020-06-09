@@ -1,3 +1,5 @@
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="$HOME/.anyenv/bin:$PATH"
+export PATH="$HOME/.anyenv/envs/rbenv/versions/2.6.6/bin:$PATH"
 eval "$(anyenv init -)"
