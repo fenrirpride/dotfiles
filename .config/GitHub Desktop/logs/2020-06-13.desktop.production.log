@@ -25,3 +25,57 @@ Error: Not Found
 2020-06-13T14:40:24.336Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 4.613s)
 2020-06-13T14:40:26.748Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.403s)
 2020-06-13T14:40:26.792Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-06-13T14:40:27.388Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:40:27.470Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/dotfiles' took 0.480s
+2020-06-13T14:40:28.404Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:40:28.833Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.413s)
+2020-06-13T14:40:30.183Z - info: [ui] Executing pull: git -c credential.helper= -c protocol.version=2 pull --progress origin (took 1.753s)
+2020-06-13T14:40:30.186Z - error: [ui] `git -c credential.helper= -c protocol.version=2 pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Auto-merging install.sh
+CONFLICT (content): Merge conflict in install.sh
+Auto-merging home/.bash_profile
+CONFLICT (content): Merge conflict in home/.bash_profile
+CONFLICT (rename/delete): etc/pulse/system.pa deleted in b71081a3c471b208ce9381119c06ff34ec07f78a and renamed to .config/pulse/system.pa in HEAD. Version HEAD of .config/pulse/system.pa left in tree.
+CONFLICT (rename/rename): Rename etc/pulse/daemon.conf.bak->.config/pulse/daemon.conf in HEAD. Rename etc/pulse/daemon.conf->.config/pulse/daemon.conf in b71081a3c471b208ce9381119c06ff34ec07f78a
+Auto-merging .config/pulse/daemon.conf
+CONFLICT (add/add): Merge conflict in .config/pulse/cookie
+Auto-merging .config/pulse/cookie
+Auto-merging .config/fish/config.fish
+CONFLICT (content): Merge conflict in .config/fish/config.fish
+Auto-merging .config/autostart/kite-autostart.desktop
+CONFLICT (content): Merge conflict in .config/autostart/kite-autostart.desktop
+CONFLICT (modify/delete): .config/autostart/albert.desktop deleted in b71081a3c471b208ce9381119c06ff34ec07f78a and modified in HEAD. Version HEAD of .config/autostart/albert.desktop left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+stderr:
+warning: Cannot merge binary files: .config/pulse/cookie (HEAD vs. b71081a3c471b208ce9381119c06ff34ec07f78a)
+
+(The error was parsed as 7: We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes.)
+2020-06-13T14:40:30.508Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:41:00.997Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:42:06.676Z - info: [ui] Background fetch for 5 repositories took 1.738sec
+2020-06-13T14:42:12.182Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:42:37.628Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:43:28.994Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:44:33.915Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:45:01.494Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:45:16.156Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:46:24.579Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:47:24.047Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:47:25.040Z - error: [ui] `git checkout --theirs -- .config/pulse/system.pa` exited with an unexpected code: 1.
+stderr:
+error: path '.config/pulse/system.pa' does not have their version
+
+2020-06-13T14:47:29.947Z - error: [ui] `git checkout --theirs -- .config/pulse/system.pa` exited with an unexpected code: 1.
+stderr:
+error: path '.config/pulse/system.pa' does not have their version
+
+2020-06-13T14:47:49.665Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:47:55.147Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 5.454s)
+2020-06-13T14:47:56.933Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.769s)
+2020-06-13T14:47:57.266Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:47:58.704Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.410s)
+2020-06-13T14:48:19.284Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:48:22.576Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:48:22.590Z - info: [ui] [BranchPruner] No branches to prune.
