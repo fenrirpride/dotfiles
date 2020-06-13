@@ -82,3 +82,36 @@ error: path '.config/pulse/system.pa' does not have their version
 2020-06-13T14:48:28.816Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
 2020-06-13T14:48:28.894Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/dotfiles' took 0.264s
 2020-06-13T14:48:30.293Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.446s)
+2020-06-13T14:48:35.041Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:48:35.123Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/dotfiles' took 0.437s
+2020-06-13T14:48:36.162Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:48:36.513Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.444s)
+2020-06-13T14:48:41.108Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 4.895s)
+2020-06-13T14:48:42.795Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.671s)
+2020-06-13T14:48:42.895Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:48:44.054Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Novel - fenrirpride (has token)
+2020-06-13T14:48:44.136Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-13T14:51:17.773Z - info: [ui] [AppStore] loading 5 repositories from store
+2020-06-13T14:51:17.773Z - info: [ui] [AppStore] found account: fenrirpride (fenrirpride)
+2020-06-13T14:51:18.841Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Novel - fenrirpride (has token)
+2020-06-13T14:51:18.942Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Novel - fenrirpride (has token)
+2020-06-13T14:51:18.988Z - info: [ui] launching: 2.5.0-linux1 (Linux 5.4.0-37-lowlatency)
+2020-06-13T14:51:18.988Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2020-06-13T14:51:19.026Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-13T14:51:20.663Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.787s)
+2020-06-13T14:51:20.683Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.720s)
+2020-06-13T14:51:25.270Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:51:25.282Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:51:25.387Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-13T14:51:26.763Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.417s)
+2020-06-13T14:51:26.779Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.446s)
+2020-06-13T14:52:54.377Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:53:19.524Z - info: [ui] Background fetch for 5 repositories took 1.698sec
+2020-06-13T14:53:20.732Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:53:29.139Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:53:45.354Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:53:56.977Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:54:06.083Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:54:20.360Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:54:37.407Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:54:53.611Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
