@@ -113,5 +113,8 @@
 	"kite.showWelcomeNotificationOnStartup": false,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
-	}
+	},
+	// textlint
+	"textlint.nodePath": "/home/yukio/MyCode/Text/node_modules/textlint",
+	"textlint.configPath": "/home/yukio/MyCode/Text/.textlint.rc"
 }

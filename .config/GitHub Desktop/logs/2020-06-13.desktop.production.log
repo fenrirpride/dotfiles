@@ -1,0 +1,27 @@
+2020-06-13T14:40:04.823Z - info: [ui] [AppStore] loading 5 repositories from store
+2020-06-13T14:40:04.825Z - info: [ui] [AppStore] found account: fenrirpride (fenrirpride)
+2020-06-13T14:40:06.106Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+Error: Not Found
+    at Object.t.parsedResponse (/home/yukio/webpack:/app/src/lib/http.ts:175:4)
+    at x.fetchProtectedBranches (/home/yukio/webpack:/app/src/lib/api.ts:870:14)
+    at Qe.updateBranchProtectionsFromAPI (/home/yukio/webpack:/app/src/lib/stores/app-store.ts:3416:9)
+2020-06-13T14:40:06.200Z - info: [ui] launching: 2.5.0-linux1 (Linux 5.4.0-37-lowlatency)
+2020-06-13T14:40:06.201Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2020-06-13T14:40:07.762Z - info: [ui] Stats reported.
+2020-06-13T14:40:11.694Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-06-13T14:40:11.727Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-06-13T14:40:11.835Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-13T14:40:13.646Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.866s)
+2020-06-13T14:40:13.669Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.931s)
+2020-06-13T14:40:18.735Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-06-13T14:40:18.827Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/ansible' took 0.222s
+2020-06-13T14:40:19.670Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-06-13T14:40:20.186Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.401s)
+2020-06-13T14:40:21.889Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:40:21.949Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-13T14:40:22.040Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-13T14:40:23.379Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.413s)
+2020-06-13T14:40:23.397Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.391s)
+2020-06-13T14:40:24.336Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 4.613s)
+2020-06-13T14:40:26.748Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.403s)
+2020-06-13T14:40:26.792Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)

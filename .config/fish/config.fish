@@ -1,20 +1,24 @@
-# path for linuxbrew
-set -g fish_user_paths "/home/linuxbrew/.linuxbrew/bin" $fish_user_paths
-# path for anyenv
-set -Ux fish_user_paths $HOME/.anyenv/bin $fish_user_paths
-# path for rbenv from anyenv
-set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
-set -x PATH $PATH "/home/yukio/.anyenv/envs/rbenv/bin"
-set -gx PATH '/home/yukio/.anyenv/envs/rbenv/shims' $PATH
-set -gx RBENV_SHELL fish
+# PATH settings
+# for linuxbrew
+set -x PATH "/home/linuxbrew/.linuxbrew/bin" $PATH
+set -x PATH "/home/linuxbrew/.linuxbrew/sbin" $PATH
 
-# ghq
+# for anyenv
+set -x PATH "$HOME/.anyenv/bin" $PATH
+status --is-interactive; and source (anyenv init -|psub)
+
+# path for rbenv from anyenv
+set -x PATH "$HOME/.anyenv/envs/rbenv/versions/2.6.6/bin" $PATH
+set -x RBENV_SHELL fish
+set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
+
+# for ghq
 set GHQ_SELECTOR peco
 set -U FZF_LEGACY_KEYBINDINGS 0
 
-# set PATH
-set -x PATH /home/linuxbrew/.linuxbrew/bin $PATH
+# for go
 set -x PATH ~/go/bin $PATH
+
 
 # functions
 # system
@@ -43,8 +47,26 @@ function code_in -d "install vscode extensions"
     end < ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
+# fish
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
+end
+
+function view_fish -d "view fish settings"
+    cat ~/.config/fish/config.fish
+end
+
+function update_fish -d "update fish settings"
+    source ~/.config/fish/config.fish
+end
+
+function edit_fish -d "edit fish settings"
+    nvim ~/.config/fish/config.fish
+    update_fish
+end
+
+function view_functions -d "list functions"
+    grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
 end
 
 # pycharm
@@ -70,23 +92,24 @@ function epub -d "epub upload dropbox"
     if test -e /mnt/RAMDISK/narou_update
         rm /mnt/RAMDISK/narou_update
     end
-    find /mnt/DATA1/Novel/ -name \*.epub | while read line
+    find "/mnt/DATA1/Novel/小説データ" -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
     end
+    echo "\/"
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
     end < /mnt/RAMDISK/narou_update
-    rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
 end
 
 # backup
 function backup -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhl --delete --exclude '*git*' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhl --delete --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
+    rsync -avhl --delete --exclude '.git' --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
     echo -e "\n\e[32m"themes"\e[m"
     rsync -avhl --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
     echo -e "\n\e[32m"ssh"\e[m"
@@ -96,11 +119,11 @@ end
 
 function backup_test -d "backup"
     echo -e "\e[32m"ansible"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/MyCode/ansible/ /mnt/UbuntuData/UbuntuBackup/ansible_20
     echo -e "\n\e[32m"dotfiles"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/MyCode/dotfiles/ /mnt/UbuntuData/UbuntuBackup/Files/dotfiles
     echo -e "\n\e[32m"pycharm"\e[m"
-    rsync -avhln --delete --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
+    rsync -avhln --delete --exclude '.git' --modify-window=1 ~/.local/share/JetBrains/PyCharm*/ /mnt/UbuntuData/UbuntuBackup/Files/PyCharm
     echo -e "\n\e[32m"themes"\e[m"
     rsync -avhln --delete --modify-window=1 ~/.themes/ /mnt/UbuntuData/UbuntuBackup/Files/.themes
     echo -e "\n\e[32m"ssh"\e[m"
@@ -136,23 +159,17 @@ function data_backup_test -d "data backup"
     echo -e "\e[32m"backup completed!"\e[m"
 end
 
-# fish
-function view_fish -d "view fish settings"
-    cat ~/.config/fish/config.fish
+function windows_backup -d "windows backup"
+    echo -e "\n\e[32m"portable"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/Windows10/portable/" "/mnt/DATA2/WindowsBackup/portable"
+    echo -e "\n\e[32m"bat"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/bat/" "/mnt/DATA2/WindowsBackup/bat"
+    echo -e "\e[32m"backup completed!"\e[m"
+    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/setup/" "/mnt/DATA2/WindowsBackup/setup"
+    echo -e "\e[32m"backup completed!"\e[m"
 end
 
-function update_fish -d "update fish settings"
-    source ~/.config/fish/config.fish
-end
-
-function edit_fish -d "edit fish settings"
-    nvim ~/.config/fish/config.fish
-    update_fish
-end
-
-function view_functions -d "list functions"
-    grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
-end
+# comic
 
 function zip_comic -d "make zip file at /manga folder"
     cd /mnt/EXHDD1/DataBackup/manga/
@@ -167,6 +184,24 @@ function zip_comic -d "make zip file at /manga folder"
                     if test $status -eq 0
                         rm -rf $comic
                     end
+                end
+            end
+            popd
+        end
+    end
+end
+
+function unzip_comic -d "make zip file at /manga folder"
+    cd /mnt/EXHDD1/DataBackup/manga/
+    set target_list (ls)
+    for directory in $target_list
+        if test -d $directory
+            pushd $directory
+            set comic_list (ls *.zip)
+            for comic in $comic_list
+                unzip $comic
+                if test $status -eq 0
+                    rm -rf $comic
                 end
             end
             popd

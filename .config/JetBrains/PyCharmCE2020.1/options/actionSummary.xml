@@ -1,0 +1,33 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$SelectAll">
+        <ActionSummary times="20" last="1591716779891" />
+      </entry>
+      <entry key="ConfigureIcs">
+        <ActionSummary times="1" last="1591760206864" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="69" last="1591716780947" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="2" last="1591760240205" />
+      </entry>
+      <entry key="WelcomeScreen.OpenDirectoryProject">
+        <ActionSummary times="1" last="1591760246476" />
+      </entry>
+      <entry key="WelcomeScreen.Plugins">
+        <ActionSummary times="1" last="1591716604405" />
+      </entry>
+      <entry key="cn.yiiguxing.plugin.translate.update.UpdateManager$CloseAction">
+        <ActionSummary times="2" last="1591760313758" />
+      </entry>
+      <entry key="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+        <ActionSummary times="2" last="1591716790266" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame$FlatWelcomeScreen$5">
+        <ActionSummary times="3" last="1591760204170" />
+      </entry>
+    </data>
+  </component>
+</application>

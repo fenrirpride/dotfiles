@@ -117,9 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 # My Settings
-export PATH=/home/yukio/.local/bin:$PATH
-export PATH="$PATH:/home/yukio/.local/bin"
-
 # original scripts
 # to update
 alias update='sudo apt update && sudo apt -y upgrade && sudo apt -y full-upgrade && sudo apt -y autoclean && sudo apt -y autoremove'
@@ -127,4 +124,3 @@ alias update='sudo apt update && sudo apt -y upgrade && sudo apt -y full-upgrade
 alias code_out='code --list-extensions > ~/MyCode/dotfiles/Code/extensions_list.txt'
 # install code extensions
 alias code_in='while read line; do code --install-extension $line; done < ~/MyCode/dotfiles/Code/extensions_list.txt'
-export PATH="$HOME/.anyenv/bin:$PATH"
