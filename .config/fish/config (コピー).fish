@@ -1,27 +1,4 @@
-# PATH settings
-# for linuxbrew
-set -x PATH "/home/linuxbrew/.linuxbrew/bin" $PATH
-set -x PATH "/home/linuxbrew/.linuxbrew/sbin" $PATH
-
-# for anyenv
-set -x PATH "$HOME/.anyenv/bin" $PATH
-status --is-interactive; and source (anyenv init -|psub)
-
-# path for rbenv from anyenv
-set -x PATH "$HOME/.anyenv/envs/rbenv/versions/2.6.6/bin" $PATH
-set -x RBENV_SHELL fish
-set -x RBENV_ROOT "/home/yukio/.anyenv/envs/rbenv"
-
-# for ghq
-set GHQ_SELECTOR peco
-set -U FZF_LEGACY_KEYBINDINGS 0
-
-# for go
-set -x PATH ~/go/bin $PATH
-
-
 # functions
-
 # system
 function update -d "update all packages"
     sudo apt update
@@ -48,26 +25,8 @@ function code_in -d "install vscode extensions"
     end < ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
-# fish
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
-end
-
-function view_fish -d "view fish settings"
-    cat ~/.config/fish/config.fish
-end
-
-function update_fish -d "update fish settings"
-    source ~/.config/fish/config.fish
-end
-
-function edit_fish -d "edit fish settings"
-    nvim ~/.config/fish/config.fish
-    update_fish
-end
-
-function view_functions -d "list functions"
-    grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
 end
 
 # pycharm
@@ -96,7 +55,6 @@ function epub -d "epub upload dropbox"
     find "/mnt/DATA1/Novel/小説データ" -name \*.epub | while read line
     cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
     end
-    echo "\/"
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
     end < /mnt/RAMDISK/narou_update
@@ -184,7 +142,9 @@ function edit_fish -d "edit fish settings"
     update_fish
 end
 
-# comic
+function view_functions -d "list functions"
+    grep "^function" ~/.config/fish/config.fish | awk -F'[ ]' -v 'ORS=\n' 'BEGIN {print "=======Funcsions======="} {print $2,$4,$5,$6} END {print "==========END=========="}'
+end
 
 function zip_comic -d "make zip file at /manga folder"
     cd /mnt/EXHDD1/DataBackup/manga/
