@@ -1,0 +1,50 @@
+2020-06-30T02:03:01.120Z - info: [ui] [AppStore] loading 5 repositories from store
+2020-06-30T02:03:01.122Z - info: [ui] [AppStore] found account: fenrirpride (fenrirpride)
+2020-06-30T02:03:02.360Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-30T02:03:02.471Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-30T02:03:02.514Z - info: [ui] launching: 2.5.0-linux1 (Linux 5.4.0-37-lowlatency)
+2020-06-30T02:03:02.514Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2020-06-30T02:03:02.555Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-30T02:03:03.809Z - info: [ui] Stats reported.
+2020-06-30T02:03:03.895Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.408s)
+2020-06-30T02:03:03.907Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.457s)
+2020-06-30T02:03:05.695Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.680s)
+2020-06-30T02:03:05.953Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-30T02:03:07.387Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.417s)
+2020-06-30T02:03:28.268Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/fenrirpride/Unity.git - fenrirpride (has token)
+2020-06-30T02:03:30.682Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/fenrirpride/Unity.git /home/yukio/MyCode/Unity (took 2.406s)
+2020-06-30T02:03:30.686Z - info: [ui] [AppStore] adding repository at /home/yukio/MyCode/Unity to store
+2020-06-30T02:03:30.865Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-06-30T02:03:30.897Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2020-06-30T02:03:30.995Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unity - fenrirpride (has token)
+2020-06-30T02:03:31.039Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unity - fenrirpride (has token)
+2020-06-30T02:03:31.143Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-30T02:03:32.460Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.402s)
+2020-06-30T02:03:32.494Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.432s)
+2020-06-30T02:03:39.243Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/fenrirpride/docker.git - fenrirpride (has token)
+2020-06-30T02:03:42.250Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/fenrirpride/docker.git /home/yukio/MyCode/docker (took 2.960s)
+2020-06-30T02:03:42.265Z - info: [ui] [AppStore] adding repository at /home/yukio/MyCode/docker to store
+2020-06-30T02:03:42.398Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unity - fenrirpride (has token)
+2020-06-30T02:03:42.506Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2020-06-30T02:03:42.614Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-06-30T02:03:42.657Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-06-30T02:03:42.757Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-30T02:03:43.812Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.392s)
+2020-06-30T02:03:44.073Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.405s)
+2020-06-30T02:03:44.088Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.397s)
+2020-06-30T02:03:44.810Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.400s)
+2020-06-30T02:03:44.879Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unity - fenrirpride (has token)
+2020-06-30T02:04:07.172Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/fenrirpride/www.git - fenrirpride (has token)
+2020-06-30T02:04:09.751Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/fenrirpride/www.git /home/yukio/MyCode/www (took 2.572s)
+2020-06-30T02:04:09.756Z - info: [ui] [AppStore] adding repository at /home/yukio/MyCode/www to store
+2020-06-30T02:04:09.893Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-06-30T02:04:09.963Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2020-06-30T02:04:10.072Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: www - fenrirpride (has token)
+2020-06-30T02:04:10.118Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: www - fenrirpride (has token)
+2020-06-30T02:04:10.208Z - info: [ui] [BranchPruner] No branches to prune.
+2020-06-30T02:04:11.293Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.387s)
+2020-06-30T02:04:11.538Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.405s)
+2020-06-30T02:04:11.552Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.399s)
+2020-06-30T02:04:12.375Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.485s)
+2020-06-30T02:04:12.464Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-06-30T02:04:24.103Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: www - fenrirpride (has token)

@@ -8,10 +8,43 @@
         <ActionSummary times="1" last="1591760206864" />
       </entry>
       <entry key="EditorBackSpace">
-        <ActionSummary times="69" last="1591716780947" />
+        <ActionSummary times="78" last="1595560747445" />
+      </entry>
+      <entry key="EditorChooseLookupItem">
+        <ActionSummary times="1" last="1595558156102" />
+      </entry>
+      <entry key="EditorChooseLookupItemReplace">
+        <ActionSummary times="12" last="1595559420988" />
       </entry>
       <entry key="EditorPaste">
-        <ActionSummary times="2" last="1591760240205" />
+        <ActionSummary times="7" last="1595559848248" />
+      </entry>
+      <entry key="EditorStartNewLine">
+        <ActionSummary times="1" last="1595559192939" />
+      </entry>
+      <entry key="EditorTab">
+        <ActionSummary times="4" last="1595559249560" />
+      </entry>
+      <entry key="NewDirectoryProject">
+        <ActionSummary times="1" last="1595558851224" />
+      </entry>
+      <entry key="NewFile">
+        <ActionSummary times="4" last="1595560743873" />
+      </entry>
+      <entry key="NewPythonFile">
+        <ActionSummary times="1" last="1595558103535" />
+      </entry>
+      <entry key="ReformatCode">
+        <ActionSummary times="1" last="1595558352571" />
+      </entry>
+      <entry key="Tree-selectChild">
+        <ActionSummary times="1" last="1595558869788" />
+      </entry>
+      <entry key="Tree-selectNext">
+        <ActionSummary times="7" last="1595558870224" />
+      </entry>
+      <entry key="Tree-selectPrevious">
+        <ActionSummary times="4" last="1595558869464" />
       </entry>
       <entry key="WelcomeScreen.OpenDirectoryProject">
         <ActionSummary times="1" last="1591760246476" />
@@ -25,8 +58,17 @@
       <entry key="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
         <ActionSummary times="2" last="1591716790266" />
       </entry>
+      <entry key="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
+        <ActionSummary times="253" last="1595560774668" />
+      </entry>
       <entry key="com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame$FlatWelcomeScreen$5">
         <ActionSummary times="3" last="1591760204170" />
+      </entry>
+      <entry key="com.intellij.ui.CommonActionsPanel$AddButton">
+        <ActionSummary times="2" last="1595558179087" />
+      </entry>
+      <entry key="com.jetbrains.python.sdk.PySdkPopupFactory$InterpreterSettingsAction">
+        <ActionSummary times="1" last="1595558164118" />
       </entry>
     </data>
   </component>

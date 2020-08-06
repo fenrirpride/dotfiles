@@ -1,7 +1,7 @@
 {
 	// editor
 	// エディタのフォントサイズ
-	"editor.fontSize": 18,
+	"editor.fontSize": 16,
 	// エディタのフォント
 	// "editor.fontFamily": "'Source Code Pro for Powerline'",
 	"editor.fontFamily": "'Fira Code Retina'",
@@ -99,7 +99,6 @@
 	// カラーテーマ
 	"workbench.colorTheme": "Dracula",
 	// ファイルアイコン
-	"workbench.iconTheme": "vscode-icons",
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 	// タブキーで挿入されるスペースの数
@@ -107,14 +106,38 @@
 	"prettier.useTabs": true,
 	// dictionary
 	// spell checkerの辞書設定
-	"cSpell.userWords": [],
+	"cSpell.userWords": [
+		"ansible",
+		"appimage",
+		"containerd",
+		"dotfiles",
+		"dpkg",
+		"fenrirpride",
+		"flathub",
+		"flatpak",
+		"flatpakrepo",
+		"hydrapaper",
+		"linuxbrew",
+		"mlocate",
+		"netplan",
+		"subelements",
+		"swapfile",
+		"swapoff",
+		"systemd",
+		"timedatectl",
+		"uinput",
+		"winetricks",
+		"xkeysnail",
+		"yukio"
+	],
 	"explorer.confirmDragAndDrop": false,
-	"window.zoomLevel": 0,
-	"kite.showWelcomeNotificationOnStartup": false,
+	"window.zoomLevel": 0.5,
+	// "kite.showWelcomeNotificationOnStartup": false,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},
+	"workbench.iconTheme": "vscode-icons",
 	// textlint
-	"textlint.nodePath": "/home/yukio/MyCode/Text/node_modules/textlint",
-	"textlint.configPath": "/home/yukio/MyCode/Text/.textlint.rc"
+	// "textlint.nodePath": "/home/yukio/MyCode/Text/node_modules/textlint",
+	// "textlint.configPath": "/home/yukio/MyCode/Text/.textlint.rc"
 }

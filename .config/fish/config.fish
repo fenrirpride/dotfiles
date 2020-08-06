@@ -1,3 +1,5 @@
+# fish settings
+set -g fish_prompt_pwd_dir_length 0
 # PATH settings
 # for linuxbrew
 set -x PATH "/home/linuxbrew/.linuxbrew/bin" $PATH
@@ -48,6 +50,12 @@ function code_in -d "install vscode extensions"
     end < ~/MyCode/dotfiles/Code/extensions_list.txt
 end
 
+function code_purge -d "uninstall vscode extensions"
+    while read line
+    code --uninstall-extension $line
+    end < ~/MyCode/dotfiles/Code/extensions_list.txt
+end
+
 # fish
 function view_ex -d "view list vscode extensions"
     cat ~/MyCode/dotfiles/Code/extensions_list.txt
@@ -64,6 +72,10 @@ end
 function edit_fish -d "edit fish settings"
     nvim ~/.config/fish/config.fish
     update_fish
+end
+
+function vim -d "alias nvim to vim"
+    nvim $argv
 end
 
 function view_functions -d "list functions"
@@ -94,13 +106,14 @@ function epub -d "epub upload dropbox"
         rm /mnt/RAMDISK/narou_update
     end
     find "/mnt/DATA1/Novel/小説データ" -name \*.epub | while read line
-    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
+    cp -vu "$line" /mnt/DATA1/online/Dropbox/epub 2> /dev/null | awk -F'[\''/']' -v 'ORS=\n' '{print $9}' >> /mnt/RAMDISK/narou_update
+    cp -u "$line" $HOME/Dropbox/epub
     end
-    echo "\/"
+    echo -e "\e[32m"update"\e[m"
     while read line
     cp "/mnt/DATA1/online/Dropbox/epub/$line" "/mnt/DATA1/online/Dropbox/epub/update"
     end < /mnt/RAMDISK/narou_update
-    sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/online/Dropbox/epub/" ~/Dropbox/epub
+    ccat -G Plaintext="green" -G Type="green" -G Punctuation="green" /mnt/RAMDISK/narou_update
 end
 
 # backup
@@ -168,20 +181,6 @@ function windows_backup -d "windows backup"
     echo -e "\e[32m"backup completed!"\e[m"
     sudo rsync -avhl --delete --modify-window=1 "/mnt/DATA1/setup/" "/mnt/DATA2/WindowsBackup/setup"
     echo -e "\e[32m"backup completed!"\e[m"
-end
-
-# fish
-function view_fish -d "view fish settings"
-    cat ~/.config/fish/config.fish
-end
-
-function update_fish -d "update fish settings"
-    source ~/.config/fish/config.fish
-end
-
-function edit_fish -d "edit fish settings"
-    nvim ~/.config/fish/config.fish
-    update_fish
 end
 
 # comic

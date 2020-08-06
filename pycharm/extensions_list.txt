@@ -15,10 +15,8 @@ indent-rainbow
 intellij-rainbow-brackets
 intellij-synonyms
 kite-pycharm
-meta
 plantuml4idea
 StickySelection
 autoscroll-plugin
-intellij-plugin-save-actions-2.0.0
-ja.201.6
-regexTester
+ja.201.11
+regexTester-1.0.7

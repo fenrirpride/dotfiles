@@ -10,18 +10,38 @@
     <property name="PyCharm.InitialConfiguration.V5" value="true" />
     <property name="PyCharm.InitialConfiguration.V6" value="true" />
     <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="SHELLCHECK.PATH" value="$APPLICATION_PLUGINS_DIR$/Shell Script/shellcheck" />
     <property name="UITheme.relaunch" value="true" />
-    <property name="appcds.runOnSecondStart" value="PC-201.7846.77-fa43d9e6528d9fdd1a9c55b23eba9bc114985a7e61f859afb99497af9ed8628d" />
+    <property name="appcds.runOnSecondStart" value="PC-201.8743.11-bf06cbdc4e101a157c8da3aaff937bf3838d1084c7965a4b4b9b699c4270f8d5" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="cn.yiiguxing.plugin.translate.version" value="2.9.1" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/MyCode/python/book" />
-    <property name="file.gist.reindex.count" value="6" />
-    <property name="fileTypeChangedCounter" value="4" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/MyCode/docker/book&#10;/home/yukio/MyCode/python/book" />
+    <property name="file.gist.reindex.count" value="2960" />
+    <property name="fileTypeChangedCounter" value="6" />
     <property name="ide.memory.adjusted" value="true" />
+    <property name="ideavim.statistics.timestamp" value="1595558109548" />
+    <property name="ignoreUltimateEdition" value="true" />
     <property name="lastSeenTip" value="neue-ColumnSelection.html" />
     <property name="lastTimeTipsWereShown" value="1591760267081" />
-    <property name="last_opened_file_path" value="$USER_HOME$/MyCode/python/book" />
+    <property name="last_opened_file_path" value="$USER_HOME$/MyCode/docker/book" />
     <property name="seenTips" value="neue-ColumnSelection.html" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="$USER_HOME$/.local/share/virtualenvs/book-x91e0g8T/bin/python" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_NOSETEST">
+      <map>
+        <entry key="$USER_HOME$/.local/share/virtualenvs/book-x91e0g8T/bin/python" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_TRIALTEST">
+      <map>
+        <entry key="$USER_HOME$/.local/share/virtualenvs/book-x91e0g8T/bin/python" value="false" />
+      </map>
+    </option>
   </component>
 </application>

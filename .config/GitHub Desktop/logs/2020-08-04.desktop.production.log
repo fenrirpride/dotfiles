@@ -1,0 +1,157 @@
+2020-08-04T13:32:39.420Z - info: [ui] [AppStore] loading 8 repositories from store
+2020-08-04T13:32:39.421Z - info: [ui] [AppStore] found account: fenrirpride (fenrirpride)
+2020-08-04T13:32:40.636Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: www - fenrirpride (has token)
+2020-08-04T13:32:40.912Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: www - fenrirpride (has token)
+2020-08-04T13:32:41.021Z - info: [ui] launching: 2.5.0-linux1 (Linux 5.4.0-42-lowlatency)
+2020-08-04T13:32:41.021Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2020-08-04T13:32:41.071Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-04T13:32:42.620Z - info: [ui] Stats reported.
+2020-08-04T13:32:42.630Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.729s)
+2020-08-04T13:32:42.634Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.677s)
+2020-08-04T13:32:43.933Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:32:43.952Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:32:44.038Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-04T13:32:45.599Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.607s)
+2020-08-04T13:32:46.515Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 2.533s)
+2020-08-04T13:33:10.365Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:33:10.469Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/ansible' took 0.336s
+2020-08-04T13:33:11.927Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.522s)
+2020-08-04T13:33:12.997Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:33:14.591Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 1.569s)
+2020-08-04T13:33:14.597Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress` exited with an unexpected code: 128.
+stderr:
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+(The error was parsed as 2: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:33:52.302Z - info: [ui] [AppStore] removing account fenrirpride (fenrirpride) from store
+2020-08-04T13:33:54.473Z - info: [ui] [SignInStore] initializing OAuth flow
+2020-08-04T13:33:54.477Z - info: [main] opening in browser: https://github.com/login/oauth/authorize?client_id=3a723b10ac5575cc5bb9&scope=repo%20user%20workflow&state=19d51d77-c4c2-425b-bc26-09e6ff89e70a
+2020-08-04T13:33:57.599Z - info: [main] Received possible protocol arguments: 2
+2020-08-04T13:33:57.599Z - info: [main] Processing protocol url
+2020-08-04T13:33:57.601Z - info: [ui] [Dispatcher] requesting authenticated user
+2020-08-04T13:33:58.663Z - info: [ui] [SignInStore] account resolved
+2020-08-04T13:33:58.663Z - info: [ui] [AppStore] adding account fenrirpride (fenrirpride) to store
+2020-08-04T13:33:59.097Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.343s)
+2020-08-04T13:34:01.535Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:34:03.265Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 1.706s)
+2020-08-04T13:34:03.266Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress` exited with an unexpected code: 128.
+stderr:
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+(The error was parsed as 2: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:25.515Z - info: [ui] [AppStore] removing account fenrirpride (fenrirpride) from store
+2020-08-04T13:34:40.706Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 1.164s)
+2020-08-04T13:34:42.146Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.355s)
+2020-08-04T13:34:42.226Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 1.380s)
+2020-08-04T13:34:42.228Z - error: [ui] `git -c credential.helper= fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/fenrirpride/ansible.git/'
+
+(The error was parsed as 3: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:43.705Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.354s)
+2020-08-04T13:34:43.723Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 1.335s)
+2020-08-04T13:34:43.723Z - error: [ui] `git -c credential.helper= fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/fenrirpride/python.git/'
+
+(The error was parsed as 3: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:45.158Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.342s)
+2020-08-04T13:34:46.094Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.382s)
+2020-08-04T13:34:46.162Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 1.366s)
+2020-08-04T13:34:46.163Z - error: [ui] `git -c credential.helper= fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/fenrirpride/Unity.git/'
+
+(The error was parsed as 3: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:47.737Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.406s)
+2020-08-04T13:34:47.861Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 1.393s)
+2020-08-04T13:34:47.864Z - error: [ui] `git -c credential.helper= fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/fenrirpride/docker.git/'
+
+(The error was parsed as 3: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:48.952Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.420s)
+2020-08-04T13:34:49.466Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.373s)
+2020-08-04T13:34:50.672Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune origin (took 2.450s)
+2020-08-04T13:34:50.673Z - error: [ui] `git -c credential.helper= fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/fenrirpride/www.git/'
+
+(The error was parsed as 3: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)
+2020-08-04T13:34:50.760Z - info: [ui] Background fetch for 8 repositories took 11.281sec
+2020-08-04T13:34:52.093Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= push origin master --follow-tags --dry-run --porcelain (took 1.333s)
+2020-08-04T13:35:04.101Z - info: [ui] [AppStore] adding account fenrirpride (fenrirpride) to store
+2020-08-04T13:35:11.341Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:35:11.376Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-04T13:35:12.894Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.539s)
+2020-08-04T13:35:13.945Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.688s)
+2020-08-04T13:35:14.043Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:35:15.512Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-04T13:35:17.118Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 1.582s)
+2020-08-04T13:35:17.119Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress` exited with an unexpected code: 128.
+stderr:
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+(The error was parsed as 2: Authentication failed. Some common reasons include:
+
+- You are not logged in to your account: see File > Options.
+- You may need to log out and log back in to refresh your token.
+- You do not have permission to access this repository.
+- The repository is archived on GitHub. Check the repository settings to confirm you are still permitted to push commits.
+- If you use SSH authentication, check that your key is added to the ssh-agent and associated with your account.)

@@ -1,0 +1,34 @@
+2020-08-06T11:39:50.978Z - info: [ui] [AppStore] loading 8 repositories from store
+2020-08-06T11:39:50.979Z - info: [ui] [AppStore] found account: fenrirpride (fenrirpride)
+2020-08-06T11:39:52.453Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-06T11:39:52.493Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-06T11:39:52.598Z - info: [ui] launching: 2.5.0-linux1 (Linux 5.4.0-42-lowlatency)
+2020-08-06T11:39:52.599Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2020-08-06T11:39:52.670Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-06T11:39:53.353Z - info: [ui] Stats reported.
+2020-08-06T11:39:54.015Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.502s)
+2020-08-06T11:39:55.024Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 2.490s)
+2020-08-06T11:39:58.173Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-06T11:39:58.217Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/ansible' took 0.247s
+2020-08-06T11:39:59.737Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-06T11:39:59.780Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.584s)
+2020-08-06T11:40:04.913Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 5.129s)
+2020-08-06T11:40:07.647Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.723s)
+2020-08-06T11:40:07.737Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: ansible - fenrirpride (has token)
+2020-08-06T11:40:12.370Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-08-06T11:40:12.381Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-08-06T11:40:12.457Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-06T11:40:13.865Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.452s)
+2020-08-06T11:40:13.881Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.477s)
+2020-08-06T11:40:21.535Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-08-06T11:40:21.584Z - info: [ui] [Timing] Action 'create commit' for 'fenrirpride/docker' took 0.210s
+2020-08-06T11:40:22.890Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
+2020-08-06T11:40:23.091Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.529s)
+2020-08-06T11:40:25.501Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-08-06T11:40:25.570Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - fenrirpride (has token)
+2020-08-06T11:40:25.626Z - info: [ui] [BranchPruner] No branches to prune.
+2020-08-06T11:40:27.095Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.497s)
+2020-08-06T11:40:27.109Z - info: [ui] Executing fetchTagsToPush: git -c credential.helper= -c protocol.version=2 push origin master --follow-tags --dry-run --porcelain (took 1.549s)
+2020-08-06T11:40:27.517Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --follow-tags --progress (took 4.609s)
+2020-08-06T11:40:30.219Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.694s)
+2020-08-06T11:40:30.265Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: docker - fenrirpride (has token)
